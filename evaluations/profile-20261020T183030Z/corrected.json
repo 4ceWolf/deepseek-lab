@@ -1,0 +1,193 @@
+{
+  "checks": [
+    {
+      "task": "stable_unhashable",
+      "arm": "candidate",
+      "original": {
+        "pass": true,
+        "cases": 4,
+        "failures": []
+      },
+      "corrected": {
+        "pass": true,
+        "cases": 4,
+        "failures": []
+      }
+    },
+    {
+      "task": "stable_unhashable",
+      "arm": "baseline",
+      "original": {
+        "pass": true,
+        "cases": 4,
+        "failures": []
+      },
+      "corrected": {
+        "pass": true,
+        "cases": 4,
+        "failures": []
+      }
+    },
+    {
+      "task": "subtract_interval",
+      "arm": "baseline",
+      "original": {
+        "pass": false,
+        "cases": 6,
+        "failures": [
+          {
+            "case": 0,
+            "reason": "Wrong result",
+            "actual": [
+              [
+                0,
+                3
+              ],
+              [
+                7,
+                10
+              ]
+            ]
+          },
+          {
+            "case": 1,
+            "reason": "Wrong result",
+            "actual": [
+              [
+                0,
+                2
+              ],
+              [
+                4,
+                8
+              ]
+            ]
+          },
+          {
+            "case": 5,
+            "reason": "Wrong result",
+            "actual": [
+              [
+                0,
+                1
+              ],
+              [
+                6,
+                8
+              ]
+            ]
+          }
+        ]
+      },
+      "corrected": {
+        "pass": true,
+        "cases": 6,
+        "failures": []
+      }
+    },
+    {
+      "task": "subtract_interval",
+      "arm": "candidate",
+      "original": {
+        "pass": true,
+        "cases": 6,
+        "failures": []
+      },
+      "corrected": {
+        "pass": true,
+        "cases": 6,
+        "failures": []
+      }
+    },
+    {
+      "task": "base_rate",
+      "arm": "candidate",
+      "original": {
+        "pass": true,
+        "actual": {
+          "numerator": 1,
+          "denominator": 12
+        }
+      },
+      "corrected": {
+        "pass": true,
+        "actual": {
+          "numerator": 1,
+          "denominator": 12
+        }
+      }
+    },
+    {
+      "task": "base_rate",
+      "arm": "baseline",
+      "original": {
+        "pass": true,
+        "actual": {
+          "numerator": 1,
+          "denominator": 12
+        }
+      },
+      "corrected": {
+        "pass": true,
+        "actual": {
+          "numerator": 1,
+          "denominator": 12
+        }
+      }
+    },
+    {
+      "task": "causal_uncertainty",
+      "arm": "baseline",
+      "original": {
+        "pass": true,
+        "actual": {
+          "restart_followed_by_recovery": true,
+          "restart_proven_cause": false,
+          "underlying_fault_identified": false
+        }
+      },
+      "corrected": {
+        "pass": true,
+        "actual": {
+          "restart_followed_by_recovery": true,
+          "restart_proven_cause": false,
+          "underlying_fault_identified": false
+        }
+      }
+    },
+    {
+      "task": "causal_uncertainty",
+      "arm": "candidate",
+      "original": {
+        "pass": true,
+        "actual": {
+          "restart_followed_by_recovery": true,
+          "restart_proven_cause": false,
+          "underlying_fault_identified": false
+        }
+      },
+      "corrected": {
+        "pass": true,
+        "actual": {
+          "restart_followed_by_recovery": true,
+          "restart_proven_cause": false,
+          "underlying_fault_identified": false
+        }
+      }
+    }
+  ],
+  "summary": {
+    "candidate": {
+      "passed": 4,
+      "tasks": 4,
+      "total_tokens": 6418
+    },
+    "baseline": {
+      "passed": 4,
+      "tasks": 4,
+      "total_tokens": 3441
+    },
+    "note": "Interval prompt did not require list versus tuple elements. Accept equivalent JSON sequence representations for this task only; original results preserved. Other test contracts unchanged.",
+    "candidate_promoted": false
+  }
+}

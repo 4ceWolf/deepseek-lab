@@ -1,0 +1,297 @@
+{
+  "provenance": "Recovered printed API result records from this chat execution log on 2026-10-14. Original SQLite database and full reasoning are not available. This is not a complete raw API log.",
+  "label": "Original first ten minimally instructed responses, not a verified user-message-only raw baseline. work/baseline.py supplied the then-current default instructions; exact original system prompt and full response envelope are unavailable.",
+  "results": [
+    {
+      "original": {
+        "task": "arithmetic",
+        "effort": "none",
+        "session_id": "82c06e96ac7940c1a79afd58edfcb098",
+        "run_id": "f8abea5a46c54962a5efd7114fdae29e",
+        "pass": false,
+        "content": "$72.76",
+        "usage": {
+          "prompt_tokens": 100,
+          "completion_tokens": 4,
+          "total_tokens": 104,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 100
+        },
+        "seconds": 1.687,
+        "finish_reason": "stop"
+      },
+      "prompt": "A product costs $80. Apply a 15% discount, then 5% sales tax to the discounted price. Return only the final price with two decimal places, e.g. $12.34.",
+      "review": {
+        "pass": false,
+        "kind": "objective"
+      }
+    },
+    {
+      "original": {
+        "task": "arithmetic",
+        "effort": "low",
+        "session_id": "a6f1e8ccd1c94f74a9f57676fdfb41e0",
+        "run_id": "9cb6bdbdd3d740ef9a54e7f7bb765fcd",
+        "pass": true,
+        "content": "$71.40",
+        "usage": {
+          "prompt_tokens": 125,
+          "completion_tokens": 78,
+          "total_tokens": 203,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 73
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 125
+        },
+        "seconds": 1.522,
+        "finish_reason": "stop"
+      },
+      "prompt": "A product costs $80. Apply a 15% discount, then 5% sales tax to the discounted price. Return only the final price with two decimal places, e.g. $12.34.",
+      "review": {
+        "pass": true,
+        "kind": "objective"
+      }
+    },
+    {
+      "original": {
+        "task": "extraction",
+        "effort": "none",
+        "session_id": "001a6527d9414c968cb8a88cd89294e5",
+        "run_id": "684dc0f1053845a3a7c9ed293b75dd9f",
+        "pass": true,
+        "content": "{\"order_id\": \"ZX-204\", \"quantity\": 3, \"color\": \"blue\", \"delivery_date\": null}",
+        "usage": {
+          "prompt_tokens": 114,
+          "completion_tokens": 28,
+          "total_tokens": 142,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 114
+        },
+        "seconds": 1.666,
+        "finish_reason": "stop"
+      },
+      "prompt": "Extract the fields from this note: \"Mina ordered 3 blue notebooks. Order ID: ZX-204. Delivery date is not provided.\" Return only a JSON object with keys order_id, quantity, color, delivery_date. Use null for the missing delivery date.",
+      "review": {
+        "pass": true,
+        "kind": "objective"
+      }
+    },
+    {
+      "original": {
+        "task": "extraction",
+        "effort": "low",
+        "session_id": "2f5836b69e454ae19c598ac9f3ca6169",
+        "run_id": "74156989b3d6471bb5e02e42d34feafe",
+        "pass": true,
+        "content": "{\"order_id\":\"ZX-204\",\"quantity\":3,\"color\":\"blue\",\"delivery_date\":null}",
+        "usage": {
+          "prompt_tokens": 139,
+          "completion_tokens": 97,
+          "total_tokens": 236,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 74
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 139
+        },
+        "seconds": 1.496,
+        "finish_reason": "stop"
+      },
+      "prompt": "Extract the fields from this note: \"Mina ordered 3 blue notebooks. Order ID: ZX-204. Delivery date is not provided.\" Return only a JSON object with keys order_id, quantity, color, delivery_date. Use null for the missing delivery date.",
+      "review": {
+        "pass": true,
+        "kind": "objective"
+      }
+    },
+    {
+      "original": {
+        "task": "missing_evidence",
+        "effort": "none",
+        "session_id": "7c30160f5cb24806a4745184ce2cbee9",
+        "run_id": "a51d9a7770d84021927f46024db0997e",
+        "pass": null,
+        "content": "No\u2014I can't determine that without seeing or receiving information about the image.",
+        "usage": {
+          "prompt_tokens": 88,
+          "completion_tokens": 16,
+          "total_tokens": 104,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 88
+        },
+        "seconds": 1.25,
+        "finish_reason": "stop"
+      },
+      "prompt": "Can you determine whether my image was generated by AI? I have not uploaded or described the image. Answer in one sentence, under 30 words.",
+      "review": {
+        "pass": true,
+        "kind": "manual"
+      }
+    },
+    {
+      "original": {
+        "task": "missing_evidence",
+        "effort": "low",
+        "session_id": "9196c22ad4634d3fa088ed4cf408e9c0",
+        "run_id": "f7257a9733a248cfb8938c3480e829ba",
+        "pass": null,
+        "content": "I cannot determine whether your image was AI-generated without seeing or receiving any details about it.",
+        "usage": {
+          "prompt_tokens": 113,
+          "completion_tokens": 101,
+          "total_tokens": 214,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 82
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 113
+        },
+        "seconds": 1.574,
+        "finish_reason": "stop"
+      },
+      "prompt": "Can you determine whether my image was generated by AI? I have not uploaded or described the image. Answer in one sentence, under 30 words.",
+      "review": {
+        "pass": true,
+        "kind": "manual"
+      }
+    },
+    {
+      "original": {
+        "task": "constrained_selection",
+        "effort": "low",
+        "session_id": "28c788819aa04ff39d00b1d5d994d640",
+        "run_id": "0c9127e5c1a14db78b64b368faa87573",
+        "pass": true,
+        "content": "{\"items\":[\"B\",\"D\",\"F\"],\"cost\":12,\"value\":23}",
+        "usage": {
+          "prompt_tokens": 183,
+          "completion_tokens": 931,
+          "total_tokens": 1114,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 911
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 183
+        },
+        "seconds": 7.415,
+        "finish_reason": "stop"
+      },
+      "prompt": "Select a subset of items to maximize total value with cost at most 12. Each item may be selected once. Item (cost,value): A(7,13), B(6,11), C(5,9), D(4,8), E(3,6), F(2,4). B and E cannot both be selected. Selecting D requires F. Return only JSON with keys items (array of item names), cost, value. Any optimal subset is acceptable.",
+      "review": {
+        "pass": true,
+        "kind": "objective"
+      }
+    },
+    {
+      "original": {
+        "task": "constrained_selection",
+        "effort": "high",
+        "session_id": "3f9ea851acb149ad85afefb36f11992e",
+        "run_id": "ca42a2d68dbb4b74af0fdc194c65924e",
+        "pass": true,
+        "content": "{\"items\":[\"A\",\"E\",\"F\"],\"cost\":12,\"value\":23}",
+        "usage": {
+          "prompt_tokens": 183,
+          "completion_tokens": 1225,
+          "total_tokens": 1408,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1205
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 183
+        },
+        "seconds": 9.317,
+        "finish_reason": "stop"
+      },
+      "prompt": "Select a subset of items to maximize total value with cost at most 12. Each item may be selected once. Item (cost,value): A(7,13), B(6,11), C(5,9), D(4,8), E(3,6), F(2,4). B and E cannot both be selected. Selecting D requires F. Return only JSON with keys items (array of item names), cost, value. Any optimal subset is acceptable.",
+      "review": {
+        "pass": true,
+        "kind": "objective"
+      }
+    },
+    {
+      "original": {
+        "task": "conditional_probability",
+        "effort": "low",
+        "session_id": "145d43954239424fb9b3f5c41a8e8541",
+        "run_id": "93ae2ebb5dc044b5b3f178148d8ff518",
+        "pass": true,
+        "content": "{\"numerator\":50,\"denominator\":123}",
+        "usage": {
+          "prompt_tokens": 144,
+          "completion_tokens": 297,
+          "total_tokens": 441,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 284
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 144
+        },
+        "seconds": 3.493,
+        "finish_reason": "stop"
+      },
+      "prompt": "An urn contains 5 red, 4 blue, and 3 green balls. Draw 4 balls uniformly without replacement. Given that at least one drawn ball is green, what is the probability that exactly two drawn balls are red? Return only JSON with integer keys numerator and denominator representing the reduced fraction.",
+      "review": {
+        "pass": true,
+        "kind": "objective"
+      }
+    },
+    {
+      "original": {
+        "task": "conditional_probability",
+        "effort": "high",
+        "session_id": "d0ad3df6387547dc82b6662e35187c14",
+        "run_id": "f0506ac8d769433791149bfe1e62b3d4",
+        "pass": true,
+        "content": "{\"numerator\":50,\"denominator\":123}",
+        "usage": {
+          "prompt_tokens": 144,
+          "completion_tokens": 377,
+          "total_tokens": 521,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 364
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 144
+        },
+        "seconds": 4.355,
+        "finish_reason": "stop"
+      },
+      "prompt": "An urn contains 5 red, 4 blue, and 3 green balls. Draw 4 balls uniformly without replacement. Given that at least one drawn ball is green, what is the probability that exactly two drawn balls are red? Return only JSON with integer keys numerator and denominator representing the reduced fraction.",
+      "review": {
+        "pass": true,
+        "kind": "objective"
+      }
+    }
+  ]
+}

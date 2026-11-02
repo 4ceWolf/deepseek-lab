@@ -1,0 +1,77 @@
+{
+  "ecu": {
+    "stages_passed": 8,
+    "requests": 8,
+    "repairs": 0,
+    "total_tokens": 16604,
+    "input_tokens": 12839,
+    "output_tokens": 3765,
+    "reasoning_tokens": 1355,
+    "response_seconds": 24.343,
+    "truncated": 0,
+    "final_cases": 148
+  },
+  "raw": {
+    "stages_passed": 8,
+    "requests": 8,
+    "repairs": 0,
+    "total_tokens": 19396,
+    "input_tokens": 9913,
+    "output_tokens": 9483,
+    "reasoning_tokens": 7059,
+    "response_seconds": 46.299,
+    "truncated": 0,
+    "final_cases": 148
+  },
+  "raw_unseen_stress": {
+    "apply_events": {
+      "pass": true,
+      "cases": 60
+    },
+    "replay": {
+      "pass": true,
+      "cases": 60
+    },
+    "audit": {
+      "pass": true,
+      "cases": 60
+    },
+    "diff_events": {
+      "pass": true,
+      "cases": 60
+    }
+  },
+  "ecu_unseen_stress": {
+    "apply_events": {
+      "pass": true,
+      "cases": 60
+    },
+    "replay": {
+      "pass": true,
+      "cases": 60
+    },
+    "audit": {
+      "pass": true,
+      "cases": 60
+    },
+    "diff_events": {
+      "pass": true,
+      "cases": 60
+    },
+    "ownership_probe": {
+      "pass": true,
+      "cases": 2
+    }
+  },
+  "ecu_fresh_context_resume": {
+    "pass": true,
+    "cases": 208,
+    "tokens": 2833
+  },
+  "comparison": {
+    "total_token_reduction_percent": 14.39,
+    "response_time_reduction_percent": 47.42,
+    "limitations": "One sequential sample per profile; synthetic eight-stage module, not hours-long repository work. Resume test only performed for ECU."
+  },
+  "total_paid_tokens": 38833
+}

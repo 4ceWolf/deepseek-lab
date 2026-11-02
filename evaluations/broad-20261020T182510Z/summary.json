@@ -1,0 +1,21 @@
+{
+  "auto": {
+    "passed": 8,
+    "tasks": 8,
+    "input_tokens": 3348,
+    "output_tokens": 872,
+    "seconds": 12.261,
+    "total_tokens": 4220
+  },
+  "high": {
+    "passed": 8,
+    "tasks": 8,
+    "input_tokens": 3373,
+    "output_tokens": 884,
+    "seconds": 11.006,
+    "total_tokens": 4257
+  },
+  "total_token_reduction_percent": 0.87,
+  "output_token_reduction_percent": 1.36,
+  "limitations": "Eight small tasks, one sample per mode. Original evaluator omitted iter/next/StopIteration; original grades preserved and all answers regraded. No proof of broad reliability or model learning. No extra API calls for regrading."
+}

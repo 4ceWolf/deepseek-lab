@@ -1,0 +1,27 @@
+[
+  {
+    "args": [
+      [
+        {
+          "id": "a",
+          "due": 1,
+          "state": "queued"
+        }
+      ],
+      2,
+      1
+    ],
+    "expected": [
+      "a"
+    ],
+    "immutable": true
+  },
+  {
+    "args": [
+      [],
+      0,
+      2
+    ],
+    "expected": []
+  }
+]

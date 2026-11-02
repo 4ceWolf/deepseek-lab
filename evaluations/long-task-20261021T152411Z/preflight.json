@@ -1,0 +1,998 @@
+{
+  "reference": {
+    "apply_events": {
+      "pass": true,
+      "status": "passed_supplied_tests",
+      "cases": 48,
+      "failures": [],
+      "failure_count": 0,
+      "source_sha256": "455fb6d73351ca9739990f579f997736a3e03ee775d86d39c194efc0406f2d19",
+      "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+    },
+    "replay": {
+      "pass": true,
+      "status": "passed_supplied_tests",
+      "cases": 48,
+      "failures": [],
+      "failure_count": 0,
+      "source_sha256": "455fb6d73351ca9739990f579f997736a3e03ee775d86d39c194efc0406f2d19",
+      "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+    },
+    "diff_events": {
+      "pass": true,
+      "status": "passed_supplied_tests",
+      "cases": 4,
+      "failures": [],
+      "failure_count": 0,
+      "source_sha256": "455fb6d73351ca9739990f579f997736a3e03ee775d86d39c194efc0406f2d19",
+      "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+    },
+    "audit": {
+      "pass": true,
+      "status": "passed_supplied_tests",
+      "cases": 48,
+      "failures": [],
+      "failure_count": 0,
+      "source_sha256": "455fb6d73351ca9739990f579f997736a3e03ee775d86d39c194efc0406f2d19",
+      "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+    }
+  },
+  "broken": {
+    "apply_events": {
+      "pass": false,
+      "status": "failed_tests",
+      "cases": 48,
+      "failures": [
+        {
+          "case": 1,
+          "args": [
+            {
+              "a": 1
+            },
+            [
+              {
+                "op": "put",
+                "key": "a",
+                "value": 0
+              }
+            ]
+          ],
+          "expected": {
+            "a": 0
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 1
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 2,
+          "args": [
+            {},
+            [
+              {
+                "op": "bad"
+              }
+            ]
+          ],
+          "expected": null,
+          "raises": "ValueError",
+          "actual": {
+            "value": {},
+            "mutated": false
+          }
+        },
+        {
+          "case": 3,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "delete",
+                "key": "b",
+                "value": -1
+              },
+              {
+                "op": "put",
+                "key": "b",
+                "value": -1
+              },
+              {
+                "op": "delete",
+                "key": "c",
+                "value": 1
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": -4
+              },
+              {
+                "op": "put",
+                "key": "b",
+                "value": -4
+              },
+              {
+                "op": "delete",
+                "key": "c",
+                "value": -2
+              }
+            ]
+          ],
+          "expected": {
+            "a": -4,
+            "b": -4
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 4,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "add",
+                "key": "b",
+                "value": 3
+              },
+              {
+                "op": "add",
+                "key": "c",
+                "value": -3
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": -2
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": 0
+              },
+              {
+                "op": "delete",
+                "key": "c",
+                "value": 2
+              },
+              {
+                "op": "add",
+                "key": "a",
+                "value": -4
+              }
+            ]
+          ],
+          "expected": {
+            "a": -2,
+            "b": 1
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 5,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "put",
+                "key": "b",
+                "value": 3
+              },
+              {
+                "op": "add",
+                "key": "c",
+                "value": -1
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": 3
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": -1
+              },
+              {
+                "op": "put",
+                "key": "b",
+                "value": -4
+              },
+              {
+                "op": "add",
+                "key": "a",
+                "value": -1
+              },
+              {
+                "op": "delete",
+                "key": "c",
+                "value": 2
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": 2
+              }
+            ]
+          ],
+          "expected": {
+            "a": 2,
+            "b": -2
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 6,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "delete",
+                "key": "a",
+                "value": -2
+              },
+              {
+                "op": "add",
+                "key": "a",
+                "value": 0
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": 0
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": 3
+              },
+              {
+                "op": "delete",
+                "key": "c",
+                "value": 2
+              },
+              {
+                "op": "delete",
+                "key": "a",
+                "value": -3
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": 3
+              },
+              {
+                "op": "delete",
+                "key": "b",
+                "value": 3
+              }
+            ]
+          ],
+          "expected": {},
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 7,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "put",
+                "key": "b",
+                "value": 0
+              },
+              {
+                "op": "delete",
+                "key": "b",
+                "value": -4
+              },
+              {
+                "op": "add",
+                "key": "a",
+                "value": -1
+              },
+              {
+                "op": "add",
+                "key": "a",
+                "value": 0
+              },
+              {
+                "op": "put",
+                "key": "c",
+                "value": 4
+              }
+            ]
+          ],
+          "expected": {
+            "a": 1,
+            "c": 4
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 8,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "delete",
+                "key": "b",
+                "value": 3
+              },
+              {
+                "op": "delete",
+                "key": "b",
+                "value": -1
+              },
+              {
+                "op": "add",
+                "key": "a",
+                "value": 1
+              },
+              {
+                "op": "delete",
+                "key": "b",
+                "value": -1
+              },
+              {
+                "op": "put",
+                "key": "b",
+                "value": 4
+              },
+              {
+                "op": "delete",
+                "key": "c",
+                "value": -1
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": -1
+              },
+              {
+                "op": "put",
+                "key": "b",
+                "value": -1
+              }
+            ]
+          ],
+          "expected": {
+            "a": 3,
+            "b": -1
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 10,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "add",
+                "key": "a",
+                "value": 1
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": 2
+              },
+              {
+                "op": "add",
+                "key": "c",
+                "value": 3
+              },
+              {
+                "op": "put",
+                "key": "c",
+                "value": 3
+              },
+              {
+                "op": "put",
+                "key": "c",
+                "value": 0
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": -4
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": 4
+              },
+              {
+                "op": "add",
+                "key": "c",
+                "value": -2
+              }
+            ]
+          ],
+          "expected": {
+            "a": 2,
+            "c": -2,
+            "b": 0
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 11,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "add",
+                "key": "c",
+                "value": 1
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": 3
+              }
+            ]
+          ],
+          "expected": {
+            "a": 2,
+            "c": 1,
+            "b": 3
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 12,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "put",
+                "key": "c",
+                "value": -1
+              },
+              {
+                "op": "add",
+                "key": "a",
+                "value": -3
+              },
+              {
+                "op": "put",
+                "key": "c",
+                "value": 1
+              }
+            ]
+          ],
+          "expected": {
+            "a": -1,
+            "c": 1
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 13,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "delete",
+                "key": "a",
+                "value": -2
+              },
+              {
+                "op": "delete",
+                "key": "a",
+                "value": 0
+              },
+              {
+                "op": "add",
+                "key": "c",
+                "value": 3
+              }
+            ]
+          ],
+          "expected": {
+            "c": 3
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 14,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "put",
+                "key": "b",
+                "value": 0
+              },
+              {
+                "op": "put",
+                "key": "b",
+                "value": -3
+              },
+              {
+                "op": "add",
+                "key": "c",
+                "value": 3
+              }
+            ]
+          ],
+          "expected": {
+            "a": 2,
+            "b": -3,
+            "c": 3
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 15,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "add",
+                "key": "a",
+                "value": 3
+              },
+              {
+                "op": "add",
+                "key": "c",
+                "value": 2
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": 0
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": -2
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": 1
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": 4
+              },
+              {
+                "op": "put",
+                "key": "b",
+                "value": -4
+              }
+            ]
+          ],
+          "expected": {
+            "a": 1,
+            "c": 2,
+            "b": -4
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 16,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "delete",
+                "key": "c",
+                "value": -3
+              },
+              {
+                "op": "add",
+                "key": "c",
+                "value": -3
+              },
+              {
+                "op": "delete",
+                "key": "b",
+                "value": 2
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": 3
+              }
+            ]
+          ],
+          "expected": {
+            "a": 3,
+            "c": -3
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 17,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "add",
+                "key": "c",
+                "value": -2
+              },
+              {
+                "op": "delete",
+                "key": "b",
+                "value": -3
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": 1
+              },
+              {
+                "op": "put",
+                "key": "c",
+                "value": -1
+              },
+              {
+                "op": "put",
+                "key": "c",
+                "value": -3
+              }
+            ]
+          ],
+          "expected": {
+            "a": 1,
+            "c": -3
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 18,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "delete",
+                "key": "c",
+                "value": -1
+              },
+              {
+                "op": "put",
+                "key": "c",
+                "value": 0
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": -2
+              },
+              {
+                "op": "delete",
+                "key": "a",
+                "value": -3
+              },
+              {
+                "op": "put",
+                "key": "b",
+                "value": -2
+              },
+              {
+                "op": "delete",
+                "key": "a",
+                "value": 1
+              },
+              {
+                "op": "add",
+                "key": "c",
+                "value": -3
+              }
+            ]
+          ],
+          "expected": {
+            "c": -3,
+            "b": -2
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 19,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "put",
+                "key": "a",
+                "value": 3
+              },
+              {
+                "op": "add",
+                "key": "a",
+                "value": -2
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": -2
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": 3
+              },
+              {
+                "op": "delete",
+                "key": "b",
+                "value": 0
+              },
+              {
+                "op": "add",
+                "key": "c",
+                "value": 2
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": -3
+              },
+              {
+                "op": "put",
+                "key": "c",
+                "value": -4
+              }
+            ]
+          ],
+          "expected": {
+            "a": -3,
+            "c": -4
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 20,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "add",
+                "key": "c",
+                "value": 2
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": -1
+              },
+              {
+                "op": "put",
+                "key": "b",
+                "value": -1
+              },
+              {
+                "op": "put",
+                "key": "b",
+                "value": 0
+              },
+              {
+                "op": "add",
+                "key": "b",
+                "value": -4
+              }
+            ]
+          ],
+          "expected": {
+            "a": 2,
+            "c": 2,
+            "b": -4
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        },
+        {
+          "case": 21,
+          "args": [
+            {
+              "a": 2
+            },
+            [
+              {
+                "op": "delete",
+                "key": "a",
+                "value": 2
+              },
+              {
+                "op": "delete",
+                "key": "c",
+                "value": -3
+              },
+              {
+                "op": "put",
+                "key": "a",
+                "value": -1
+              },
+              {
+                "op": "add",
+                "key": "c",
+                "value": 1
+              },
+              {
+                "op": "delete",
+                "key": "a",
+                "value": -1
+              }
+            ]
+          ],
+          "expected": {
+            "c": 1
+          },
+          "raises": null,
+          "actual": {
+            "value": {
+              "a": 2
+            },
+            "mutated": false
+          }
+        }
+      ],
+      "failure_count": 43,
+      "source_sha256": "7cf1d4d139c6eaaa2544965a9a2fcf87a0debf90f4f9668e84af684d01289dd1",
+      "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+    },
+    "replay": {
+      "pass": false,
+      "status": "execution_failed",
+      "exit_code": 1,
+      "detail": "{\"error\": \"KeyError: 'replay'\"}\n",
+      "cases": 48
+    },
+    "diff_events": {
+      "pass": false,
+      "status": "execution_failed",
+      "exit_code": 1,
+      "detail": "{\"error\": \"KeyError: 'diff_events'\"}\n",
+      "cases": 4
+    },
+    "audit": {
+      "pass": false,
+      "status": "execution_failed",
+      "exit_code": 1,
+      "detail": "{\"error\": \"KeyError: 'audit'\"}\n",
+      "cases": 48
+    }
+  }
+}

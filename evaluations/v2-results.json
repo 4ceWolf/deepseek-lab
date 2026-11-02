@@ -1,0 +1,1142 @@
+[
+  {
+    "task": "stable_unique",
+    "arm": "ecu",
+    "session_id": "8f1c58b33348411c8b9da81bb90fedcb",
+    "run_id": "75e05d45edc840a6bd0979b5e5af59a0",
+    "content": "```python\ndef stable_unique(xs):\n    result = []\n    for x in xs:\n        if not any(x == y for y in result):\n            result.append(x)\n    return result\n```\n\nUses `==` against previously kept items only, so unhashable elements work, order of first occurrences is preserved, and `xs` is never mutated. Note: O(n\u00b2) comparisons; if you need a hashable fast path, a `try`/`except TypeError` around a `set` cache would be the next step, but that grows the code beyond the stated constraints.",
+    "usage": {
+      "prompt_tokens": 859,
+      "completion_tokens": 185,
+      "total_tokens": 1044,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 859
+    },
+    "seconds": 2.899,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "low",
+      "max_tokens": 2048,
+      "reason": "Conservative low reasoning for coding, OS tasks, and unknown requests.",
+      "task_mode": "coding",
+      "context_mode": "auto",
+      "reference_ids": [
+        "arch-maintenance",
+        "coding-workflow",
+        "environment"
+      ],
+      "reference_characters": 2812,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "7ae450bd464974fa1abeb0261466eee76777dc17f8f6036b02c6c11b50569afd"
+    },
+    "check": {
+      "pass": false,
+      "error": "invalid character '\u00b2' (U+00B2) (<unknown>, line 10)"
+    }
+  },
+  {
+    "task": "stable_unique",
+    "arm": "baseline",
+    "session_id": "4dcd41c7bc2143f69f436d60c9d5b8c3",
+    "run_id": "3c611fd6460f408ab0f8fb99401e04fb",
+    "content": "```python\ndef stable_unique(xs):\n    result = []\n    for item in xs:\n        if not any(item == seen for seen in result):\n            result.append(item)\n    return result\n```",
+    "usage": {
+      "prompt_tokens": 2346,
+      "completion_tokens": 205,
+      "total_tokens": 2551,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2346
+    },
+    "seconds": 2.743,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "high",
+      "max_tokens": 2048,
+      "reason": "Explicit effort selection.",
+      "task_mode": "coding",
+      "context_mode": "all",
+      "reference_ids": [
+        "environment",
+        "boot-status",
+        "boot-recovery",
+        "boot-rendering",
+        "storage-care",
+        "network-care",
+        "firewall-care",
+        "desktop-care",
+        "arch-maintenance",
+        "coding-workflow"
+      ],
+      "reference_characters": 9768,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "994163b1ebbe018a384611024bf36cc57b17c115e1b0960338561f2c62b84d05"
+    },
+    "check": {
+      "pass": true,
+      "cases": 3,
+      "failures": []
+    }
+  },
+  {
+    "task": "chunked",
+    "arm": "baseline",
+    "session_id": "19014e869f54432a81eb20af874c3337",
+    "run_id": "e45fb8c99d264dd28c33458ac813eeaf",
+    "content": "```python\ndef chunked(xs, n):\n    if n <= 0:\n        raise ValueError(\"n must be positive\")\n    return [list(xs[i:i + n]) for i in range(0, len(xs), n)]\n```",
+    "usage": {
+      "prompt_tokens": 2361,
+      "completion_tokens": 88,
+      "total_tokens": 2449,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 35
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 185
+    },
+    "seconds": 2.017,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "high",
+      "max_tokens": 2048,
+      "reason": "Explicit effort selection.",
+      "task_mode": "coding",
+      "context_mode": "all",
+      "reference_ids": [
+        "environment",
+        "boot-status",
+        "boot-recovery",
+        "boot-rendering",
+        "storage-care",
+        "network-care",
+        "firewall-care",
+        "desktop-care",
+        "arch-maintenance",
+        "coding-workflow"
+      ],
+      "reference_characters": 9768,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "994163b1ebbe018a384611024bf36cc57b17c115e1b0960338561f2c62b84d05"
+    },
+    "check": {
+      "pass": true,
+      "cases": 5,
+      "failures": []
+    }
+  },
+  {
+    "task": "chunked",
+    "arm": "ecu",
+    "session_id": "aa794686e1c34bd1a26959f096180140",
+    "run_id": "2f72599f718f4140b55838a1b4c8f484",
+    "content": "```python\ndef chunked(xs, n):\n    if n <= 0:\n        raise ValueError(\"n must be positive\")\n    return [list(xs[i:i + n]) for i in range(0, len(xs), n)]\n```\n\nSlicing with `list(...)` reads from `xs` without mutation; the final slice is naturally shorter.",
+    "usage": {
+      "prompt_tokens": 668,
+      "completion_tokens": 86,
+      "total_tokens": 754,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 10
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 668
+    },
+    "seconds": 1.873,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "low",
+      "max_tokens": 2048,
+      "reason": "Conservative low reasoning for coding, OS tasks, and unknown requests.",
+      "task_mode": "coding",
+      "context_mode": "auto",
+      "reference_ids": [
+        "coding-workflow",
+        "environment"
+      ],
+      "reference_characters": 1795,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "b5ed56cf1acdd2ddda9ad102343c0cda4d920d22178fc29dd5b91e14d45be8e0"
+    },
+    "check": {
+      "pass": false,
+      "error": "invalid syntax (<unknown>, line 1)"
+    }
+  },
+  {
+    "task": "merge_intervals",
+    "arm": "ecu",
+    "session_id": "9c16a2938fd04446b8f80191da0c7365",
+    "run_id": "e42224d103a74431999911e0632040c8",
+    "content": "```python\ndef merge_intervals(intervals):\n    if not intervals:\n        return []\n\n    ordered = sorted((list(pair) for pair in intervals), key=lambda p: (p[0], p[1]))\n\n    merged = []\n    current_start, current_end = ordered[0][0], ordered[0][1]\n    for start, end in ordered[1:]:\n        if start <= current_end:\n            if end > current_end:\n                current_end = end\n        else:\n            merged.append([current_start, current_end])\n            current_start, current_end = start, end\n\n    merged.append([current_start, current_end])\n    return merged\n```",
+    "usage": {
+      "prompt_tokens": 859,
+      "completion_tokens": 169,
+      "total_tokens": 1028,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 29
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 475
+    },
+    "seconds": 1.74,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "low",
+      "max_tokens": 2048,
+      "reason": "Conservative low reasoning for coding, OS tasks, and unknown requests.",
+      "task_mode": "coding",
+      "context_mode": "auto",
+      "reference_ids": [
+        "coding-workflow",
+        "environment",
+        "network-care"
+      ],
+      "reference_characters": 2697,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "9c48ccf008cfa181e160d2bac2c1762fcf8ab5e144239077bc483dd2afd1a639"
+    },
+    "check": {
+      "pass": true,
+      "cases": 4,
+      "failures": []
+    }
+  },
+  {
+    "task": "merge_intervals",
+    "arm": "baseline",
+    "session_id": "8dea5f93b2e24e94ac041c6e37cabb30",
+    "run_id": "4bb2138eed8c44dc8fcac63cc4476815",
+    "content": "def merge_intervals(intervals):\n    if not intervals:\n        return []\n\n    ordered = sorted((list(interval) for interval in intervals), key=lambda x: (x[0], x[1]))\n    merged = [ordered[0][:]]\n\n    for start, end in ordered[1:]:\n        last = merged[-1]\n        if start <= last[1]:\n            if end > last[1]:\n                last[1] = end\n        else:\n            merged.append([start, end])\n\n    return merged",
+    "usage": {
+      "prompt_tokens": 2372,
+      "completion_tokens": 545,
+      "total_tokens": 2917,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 435
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 196
+    },
+    "seconds": 4.389,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "high",
+      "max_tokens": 2048,
+      "reason": "Explicit effort selection.",
+      "task_mode": "coding",
+      "context_mode": "all",
+      "reference_ids": [
+        "environment",
+        "boot-status",
+        "boot-recovery",
+        "boot-rendering",
+        "storage-care",
+        "network-care",
+        "firewall-care",
+        "desktop-care",
+        "arch-maintenance",
+        "coding-workflow"
+      ],
+      "reference_characters": 9768,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "994163b1ebbe018a384611024bf36cc57b17c115e1b0960338561f2c62b84d05"
+    },
+    "check": {
+      "pass": true,
+      "cases": 4,
+      "failures": []
+    }
+  },
+  {
+    "task": "parse_assignments",
+    "arm": "baseline",
+    "session_id": "2fb7c57ca9a84f298ad2630d4dd7e2c4",
+    "run_id": "f02ff71777294b6ab6062c61df5b4bb1",
+    "content": "def parse_assignments(text):\n    result = {}\n    for line in text.splitlines():\n        stripped = line.strip()\n        if not stripped or stripped.startswith(\"#\"):\n            continue\n        if \"=\" not in line:\n            raise ValueError(\"missing '=' in assignment\")\n        key, value = line.split(\"=\", 1)\n        key = key.strip()\n        value = value.strip()\n        if not key:\n            raise ValueError(\"empty key\")\n        result[key] = value\n    return result",
+    "usage": {
+      "prompt_tokens": 2382,
+      "completion_tokens": 324,
+      "total_tokens": 2706,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 220
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 206
+    },
+    "seconds": 3.335,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "high",
+      "max_tokens": 2048,
+      "reason": "Explicit effort selection.",
+      "task_mode": "coding",
+      "context_mode": "all",
+      "reference_ids": [
+        "environment",
+        "boot-status",
+        "boot-recovery",
+        "boot-rendering",
+        "storage-care",
+        "network-care",
+        "firewall-care",
+        "desktop-care",
+        "arch-maintenance",
+        "coding-workflow"
+      ],
+      "reference_characters": 9768,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "994163b1ebbe018a384611024bf36cc57b17c115e1b0960338561f2c62b84d05"
+    },
+    "check": {
+      "pass": true,
+      "cases": 5,
+      "failures": []
+    }
+  },
+  {
+    "task": "parse_assignments",
+    "arm": "ecu",
+    "session_id": "81950d2d2e70440fbf0fcb021578a988",
+    "run_id": "c3d2d37cff7845e78d8dc2459f30cba3",
+    "content": "```python\ndef parse_assignments(text):\n    assignments = {}\n    for line in text.splitlines():\n        stripped = line.strip()\n        if not stripped or stripped.startswith(\"#\"):\n            continue\n        if \"=\" not in line:\n            raise ValueError(f\"missing '=' in line: {line!r}\")\n        key, value = line.split(\"=\", 1)\n        key = key.strip()\n        value = value.strip()\n        if not key:\n            raise ValueError(f\"empty key in line: {line!r}\")\n        assignments[key] = value\n    return assignments\n```",
+    "usage": {
+      "prompt_tokens": 895,
+      "completion_tokens": 380,
+      "total_tokens": 1275,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 257
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 255
+    },
+    "seconds": 2.936,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "low",
+      "max_tokens": 2048,
+      "reason": "Conservative low reasoning for coding, OS tasks, and unknown requests.",
+      "task_mode": "coding",
+      "context_mode": "auto",
+      "reference_ids": [
+        "arch-maintenance",
+        "coding-workflow",
+        "environment"
+      ],
+      "reference_characters": 2812,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "7ae450bd464974fa1abeb0261466eee76777dc17f8f6036b02c6c11b50569afd"
+    },
+    "check": {
+      "pass": true,
+      "cases": 5,
+      "failures": []
+    }
+  },
+  {
+    "task": "lower_bound",
+    "arm": "ecu",
+    "session_id": "84875a96f5124effb1e8267f7d61e02a",
+    "run_id": "e2b0876d69134819b59f80c769c350c8",
+    "content": "def lower_bound(xs, target):\n    lo, hi = 0, len(xs)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if xs[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo",
+    "usage": {
+      "prompt_tokens": 846,
+      "completion_tokens": 216,
+      "total_tokens": 1062,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 206
+    },
+    "seconds": 2.056,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "low",
+      "max_tokens": 2048,
+      "reason": "Conservative low reasoning for coding, OS tasks, and unknown requests.",
+      "task_mode": "coding",
+      "context_mode": "auto",
+      "reference_ids": [
+        "coding-workflow",
+        "environment",
+        "network-care"
+      ],
+      "reference_characters": 2697,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "9c48ccf008cfa181e160d2bac2c1762fcf8ab5e144239077bc483dd2afd1a639"
+    },
+    "check": {
+      "pass": true,
+      "cases": 5,
+      "failures": []
+    }
+  },
+  {
+    "task": "lower_bound",
+    "arm": "baseline",
+    "session_id": "0218e4e21a7b4b768657f1db2f9fae15",
+    "run_id": "c9a68d1388b04c99843b973c115e01c6",
+    "content": "def lower_bound(xs, target):\n    lo, hi = 0, len(xs)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if xs[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo",
+    "usage": {
+      "prompt_tokens": 2359,
+      "completion_tokens": 203,
+      "total_tokens": 2562,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 183
+    },
+    "seconds": 2.329,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "high",
+      "max_tokens": 2048,
+      "reason": "Explicit effort selection.",
+      "task_mode": "coding",
+      "context_mode": "all",
+      "reference_ids": [
+        "environment",
+        "boot-status",
+        "boot-recovery",
+        "boot-rendering",
+        "storage-care",
+        "network-care",
+        "firewall-care",
+        "desktop-care",
+        "arch-maintenance",
+        "coding-workflow"
+      ],
+      "reference_characters": 9768,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "994163b1ebbe018a384611024bf36cc57b17c115e1b0960338561f2c62b84d05"
+    },
+    "check": {
+      "pass": true,
+      "cases": 5,
+      "failures": []
+    }
+  },
+  {
+    "task": "mutable_default",
+    "arm": "baseline",
+    "session_id": "3583566c8e5f4ef185016f3ffb789510",
+    "run_id": "94ebc97c45844cd790ee5c970537b25d",
+    "content": "```python\ndef add_item(item, bucket=None):\n    if bucket is None:\n        bucket = []\n    bucket.append(item)\n    return bucket\n```",
+    "usage": {
+      "prompt_tokens": 2360,
+      "completion_tokens": 116,
+      "total_tokens": 2476,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 184
+    },
+    "seconds": 2.244,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "high",
+      "max_tokens": 2048,
+      "reason": "Explicit effort selection.",
+      "task_mode": "coding",
+      "context_mode": "all",
+      "reference_ids": [
+        "environment",
+        "boot-status",
+        "boot-recovery",
+        "boot-rendering",
+        "storage-care",
+        "network-care",
+        "firewall-care",
+        "desktop-care",
+        "arch-maintenance",
+        "coding-workflow"
+      ],
+      "reference_characters": 9768,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "994163b1ebbe018a384611024bf36cc57b17c115e1b0960338561f2c62b84d05"
+    },
+    "check": {
+      "pass": true,
+      "cases": 3,
+      "failures": []
+    }
+  },
+  {
+    "task": "mutable_default",
+    "arm": "ecu",
+    "session_id": "043edbf27f644fbe9e199b6231d8249c",
+    "run_id": "3ade2771d8794219857b26063042fd7a",
+    "content": "```python\ndef add_item(item, bucket=None):\n    if bucket is None:\n        bucket = []\n    bucket.append(item)\n    return bucket\n```\n\n`None` as the default means each no-bucket call gets a fresh list, while a caller-supplied list is mutated and returned. Note: a caller cannot pass `None` expecting a list back, and passing a tuple will raise `AttributeError` on `append`.",
+    "usage": {
+      "prompt_tokens": 875,
+      "completion_tokens": 97,
+      "total_tokens": 972,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 9
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 875
+    },
+    "seconds": 1.85,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "low",
+      "max_tokens": 2048,
+      "reason": "Conservative low reasoning for coding, OS tasks, and unknown requests.",
+      "task_mode": "coding",
+      "context_mode": "auto",
+      "reference_ids": [
+        "boot-status",
+        "coding-workflow",
+        "environment"
+      ],
+      "reference_characters": 2682,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "f2b482611bb13d7ade4938238c936d430c155870298bb1553700949911c96761"
+    },
+    "check": {
+      "pass": false,
+      "error": "invalid syntax (<unknown>, line 1)"
+    }
+  },
+  {
+    "task": "miku_history",
+    "arm": "ecu",
+    "session_id": "df2a800155394b9093ce74e76f4e076f",
+    "run_id": "860dbc990d5e45cdbe5b3ba8d814580f",
+    "content": "{\n  \"zen_verified\": true,\n  \"lts_verified\": false,\n  \"evidence_type\": \"user-reported runtime verification\",\n  \"date\": \"2026-09-29\",\n  \"source_id\": \"miku-verified\"\n}",
+    "usage": {
+      "prompt_tokens": 1016,
+      "completion_tokens": 200,
+      "total_tokens": 1216,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 760
+    },
+    "seconds": 2.223,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "low",
+      "max_tokens": 2048,
+      "reason": "Conservative low reasoning for coding, OS tasks, and unknown requests.",
+      "task_mode": "arch",
+      "context_mode": "auto",
+      "reference_ids": [
+        "arch-maintenance",
+        "boot-recovery",
+        "boot-status"
+      ],
+      "reference_characters": 3267,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "2e609bfce587767caab93b7c37a2396ab2d6e978aea24bae336915222f5f8662"
+    },
+    "check": {
+      "pass": false,
+      "failed_fields": [
+        "source_id"
+      ]
+    }
+  },
+  {
+    "task": "miku_history",
+    "arm": "baseline",
+    "session_id": "9bdd73d40e404fa2b3be31ce5f6de325",
+    "run_id": "4db75ca0b6f24d4185503d92f391e697",
+    "content": "```json\n{\n  \"zen_verified\": true,\n  \"lts_verified\": false,\n  \"evidence_type\": \"user-reported runtime verification (user-confirmed successful Zen boot and disk unlock; not an automated screenshot test)\",\n  \"date\": \"2026-09-29\",\n  \"source_id\": \"miku-verified\"\n}\n```\n\nNotes: the later snapshot (VERIFIED-BOOT.md, 2026-09-29, kernel 7.2.7-zen1-1-zen, `Theme=miku-safe` observed after reboot) supersedes the earlier README/KERNELS statements that activation and rendering were merely staged. LTS boot verification was not reported, so `lts_verified` is `false` \u2014 not a claim that LTS fails. Do not infer either kernel is currently running.",
+    "usage": {
+      "prompt_tokens": 2373,
+      "completion_tokens": 234,
+      "total_tokens": 2607,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 197
+    },
+    "seconds": 2.38,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "high",
+      "max_tokens": 2048,
+      "reason": "Explicit effort selection.",
+      "task_mode": "arch",
+      "context_mode": "all",
+      "reference_ids": [
+        "environment",
+        "boot-status",
+        "boot-recovery",
+        "boot-rendering",
+        "storage-care",
+        "network-care",
+        "firewall-care",
+        "desktop-care",
+        "arch-maintenance",
+        "coding-workflow"
+      ],
+      "reference_characters": 9768,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "994163b1ebbe018a384611024bf36cc57b17c115e1b0960338561f2c62b84d05"
+    },
+    "check": {
+      "pass": false,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  },
+  {
+    "task": "recovery_scope",
+    "arm": "baseline",
+    "session_id": "ad1e5b51d6264070aaa06fd9ee6251c2",
+    "run_id": "a3dddbe8fa6548ab87f1bab13d419490",
+    "content": "{\n  \"command\": \"plymouth-set-default-theme tribar && mkinitcpio -p linux-zen\",\n  \"rebuilds_lts\": false,\n  \"reboot_on_failure\": false,\n  \"source_id\": \"miku-recovery\"\n}",
+    "usage": {
+      "prompt_tokens": 2389,
+      "completion_tokens": 157,
+      "total_tokens": 2546,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 213
+    },
+    "seconds": 2.164,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "high",
+      "max_tokens": 2048,
+      "reason": "Explicit effort selection.",
+      "task_mode": "arch",
+      "context_mode": "all",
+      "reference_ids": [
+        "environment",
+        "boot-status",
+        "boot-recovery",
+        "boot-rendering",
+        "storage-care",
+        "network-care",
+        "firewall-care",
+        "desktop-care",
+        "arch-maintenance",
+        "coding-workflow"
+      ],
+      "reference_characters": 9768,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "994163b1ebbe018a384611024bf36cc57b17c115e1b0960338561f2c62b84d05"
+    },
+    "check": {
+      "pass": false,
+      "failed_fields": [
+        "source_id"
+      ]
+    }
+  },
+  {
+    "task": "recovery_scope",
+    "arm": "ecu",
+    "session_id": "f45c11815b874cc2869cee50fc6851c2",
+    "run_id": "077e61177ea741adb9556b1a879d627e",
+    "content": "{\n  \"command\": \"plymouth-set-default-theme tribar && mkinitcpio -p linux-zen\",\n  \"rebuilds_lts\": false,\n  \"reboot_on_failure\": false,\n  \"source_id\": \"miku-recovery\"\n}",
+    "usage": {
+      "prompt_tokens": 1032,
+      "completion_tokens": 138,
+      "total_tokens": 1170,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 136
+    },
+    "seconds": 1.896,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "low",
+      "max_tokens": 2048,
+      "reason": "Conservative low reasoning for coding, OS tasks, and unknown requests.",
+      "task_mode": "arch",
+      "context_mode": "auto",
+      "reference_ids": [
+        "arch-maintenance",
+        "boot-recovery",
+        "boot-status"
+      ],
+      "reference_characters": 3267,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "2e609bfce587767caab93b7c37a2396ab2d6e978aea24bae336915222f5f8662"
+    },
+    "check": {
+      "pass": false,
+      "failed_fields": [
+        "source_id"
+      ]
+    }
+  },
+  {
+    "task": "snapshot_space",
+    "arm": "ecu",
+    "session_id": "f1c77e66080f4307b6b4721d64276703",
+    "run_id": "947da66ce1a24f44be7a697ccccce8f8",
+    "content": "{\n  \"physically_reclaimed_proven\": false,\n  \"leading_explanation\": \"Retained Btrfs snapshots sharing extents\",\n  \"exclusive_usage_measured\": false,\n  \"source_id\": \"machine-audit\"\n}",
+    "usage": {
+      "prompt_tokens": 924,
+      "completion_tokens": 239,
+      "total_tokens": 1163,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 184
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 668
+    },
+    "seconds": 2.512,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "low",
+      "max_tokens": 2048,
+      "reason": "Conservative low reasoning for coding, OS tasks, and unknown requests.",
+      "task_mode": "arch",
+      "context_mode": "auto",
+      "reference_ids": [
+        "arch-maintenance",
+        "network-care",
+        "storage-care"
+      ],
+      "reference_characters": 2914,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "c21a0549ecaf402ece526a8590d63e349760b6a163c9eddf216d2ac6744a4c0f"
+    },
+    "check": {
+      "pass": false,
+      "failed_fields": [
+        "source_id"
+      ]
+    }
+  },
+  {
+    "task": "snapshot_space",
+    "arm": "baseline",
+    "session_id": "b3b81b781d114ee8a92c7419eaf0c122",
+    "run_id": "dbb605b07c6a4292a7c10501939985c8",
+    "content": "{\n  \"physically_reclaimed_proven\": false,\n  \"leading_explanation\": \"Retained Btrfs snapshots sharing extents\",\n  \"exclusive_usage_measured\": false,\n  \"source_id\": \"machine-audit\"\n}",
+    "usage": {
+      "prompt_tokens": 2390,
+      "completion_tokens": 229,
+      "total_tokens": 2619,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 214
+    },
+    "seconds": 2.337,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "high",
+      "max_tokens": 2048,
+      "reason": "Explicit effort selection.",
+      "task_mode": "arch",
+      "context_mode": "all",
+      "reference_ids": [
+        "environment",
+        "boot-status",
+        "boot-recovery",
+        "boot-rendering",
+        "storage-care",
+        "network-care",
+        "firewall-care",
+        "desktop-care",
+        "arch-maintenance",
+        "coding-workflow"
+      ],
+      "reference_characters": 9768,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "994163b1ebbe018a384611024bf36cc57b17c115e1b0960338561f2c62b84d05"
+    },
+    "check": {
+      "pass": false,
+      "failed_fields": [
+        "source_id"
+      ]
+    }
+  },
+  {
+    "task": "firewall_scope",
+    "arm": "baseline",
+    "session_id": "2ffb37d35150466e9ce1edd7902971c9",
+    "run_id": "715eb6d5fcd94f90aead50428f79319d",
+    "content": "{\n  \"table\": \"inet machine_care_guard\",\n  \"service\": \"machine-care-firewall.service\",\n  \"active_proves_packet_behavior\": false,\n  \"flush_all_rules\": false,\n  \"source_id\": \"machine-security, machine-dashboard\"\n}",
+    "usage": {
+      "prompt_tokens": 2375,
+      "completion_tokens": 146,
+      "total_tokens": 2521,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 199
+    },
+    "seconds": 2.015,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "high",
+      "max_tokens": 2048,
+      "reason": "Explicit effort selection.",
+      "task_mode": "arch",
+      "context_mode": "all",
+      "reference_ids": [
+        "environment",
+        "boot-status",
+        "boot-recovery",
+        "boot-rendering",
+        "storage-care",
+        "network-care",
+        "firewall-care",
+        "desktop-care",
+        "arch-maintenance",
+        "coding-workflow"
+      ],
+      "reference_characters": 9768,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "994163b1ebbe018a384611024bf36cc57b17c115e1b0960338561f2c62b84d05"
+    },
+    "check": {
+      "pass": false,
+      "failed_fields": [
+        "source_id"
+      ]
+    }
+  },
+  {
+    "task": "firewall_scope",
+    "arm": "ecu",
+    "session_id": "bcdf3e48399245ad9202165efa37ad8b",
+    "run_id": "1fdb9d64b1fb4781bc43dbe4d8b5b93a",
+    "content": "{\n  \"table\": \"inet machine_care_guard\",\n  \"service\": \"machine-care-firewall.service\",\n  \"active_proves_packet_behavior\": false,\n  \"flush_all_rules\": false,\n  \"source_id\": \"machine-security\"\n}",
+    "usage": {
+      "prompt_tokens": 926,
+      "completion_tokens": 176,
+      "total_tokens": 1102,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 670
+    },
+    "seconds": 2.319,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "low",
+      "max_tokens": 2048,
+      "reason": "Conservative low reasoning for coding, OS tasks, and unknown requests.",
+      "task_mode": "arch",
+      "context_mode": "auto",
+      "reference_ids": [
+        "arch-maintenance",
+        "boot-status",
+        "firewall-care"
+      ],
+      "reference_characters": 2970,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "5f2be549fe6b4422d1d8b30f998300f0b5bf4484c594f98ef2860655b3218ca8"
+    },
+    "check": {
+      "pass": false,
+      "failed_fields": [
+        "source_id"
+      ]
+    }
+  },
+  {
+    "task": "flatpak_host",
+    "arm": "ecu",
+    "session_id": "f7cc8edfbab04f28823bde1585a1df90",
+    "run_id": "0326a90d39304240820ebc1a370affe4",
+    "content": "```json\n{\n  \"host_os\": \"Arch Linux\",\n  \"app_runtime\": \"Freedesktop SDK 25.08\",\n  \"command\": \"flatpak-spawn --host uname -r\",\n  \"source_id\": \"environment\"\n}\n```\n\n`/run/host/os-release` describes the host (Arch Linux, kernel 7.2.9-zen1-1-zen as of the 2026-10-14 read-only check); `/etc/os-release` inside the sandbox describes the Flatpak runtime (Freedesktop SDK 25.08). `flatpak-spawn --host uname -r` reads the host kernel without changing state; expect a kernel string distinct from the runtime's. This is a dated observation, not a live inspection.",
+    "usage": {
+      "prompt_tokens": 884,
+      "completion_tokens": 244,
+      "total_tokens": 1128,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 628
+    },
+    "seconds": 2.522,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "low",
+      "max_tokens": 2048,
+      "reason": "Conservative low reasoning for coding, OS tasks, and unknown requests.",
+      "task_mode": "arch",
+      "context_mode": "auto",
+      "reference_ids": [
+        "arch-maintenance",
+        "environment",
+        "network-care"
+      ],
+      "reference_characters": 2700,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "1075c6ce618cf91c2f9db47d937f3ebf3955da53737e1cbacada8827c248a9da"
+    },
+    "check": {
+      "pass": false,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  },
+  {
+    "task": "flatpak_host",
+    "arm": "baseline",
+    "session_id": "cebcc2fb056c412b9ea1c48cc9e6f2f7",
+    "run_id": "8f528338ca56412aa181dea563563d36",
+    "content": "{\"host_os\":\"Arch Linux\",\"app_runtime\":\"Freedesktop SDK 25.08\",\"command\":\"flatpak-spawn --host uname -r\",\"source_id\":\"environment\"}",
+    "usage": {
+      "prompt_tokens": 2379,
+      "completion_tokens": 307,
+      "total_tokens": 2686,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 266
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 203
+    },
+    "seconds": 2.68,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "high",
+      "max_tokens": 2048,
+      "reason": "Explicit effort selection.",
+      "task_mode": "arch",
+      "context_mode": "all",
+      "reference_ids": [
+        "environment",
+        "boot-status",
+        "boot-recovery",
+        "boot-rendering",
+        "storage-care",
+        "network-care",
+        "firewall-care",
+        "desktop-care",
+        "arch-maintenance",
+        "coding-workflow"
+      ],
+      "reference_characters": 9768,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "994163b1ebbe018a384611024bf36cc57b17c115e1b0960338561f2c62b84d05"
+    },
+    "check": {
+      "pass": false,
+      "failed_fields": [
+        "app_runtime"
+      ]
+    }
+  },
+  {
+    "task": "package_update",
+    "arm": "baseline",
+    "session_id": "269c4e1bec1c4a4cbf9bf3ff543a6c66",
+    "run_id": "522aa732d84a4a4f9245a56712a2df41",
+    "content": "{\n  \"partial_upgrade_supported\": false,\n  \"full_upgrade_command\": \"pacman -Syu\",\n  \"update_checker\": \"checkupdates\",\n  \"auto_upgrade_during_unrelated_debug\": false,\n  \"source_id\": \"arch-maintenance\"\n}",
+    "usage": {
+      "prompt_tokens": 2400,
+      "completion_tokens": 169,
+      "total_tokens": 2569,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 224
+    },
+    "seconds": 2.342,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "high",
+      "max_tokens": 2048,
+      "reason": "Explicit effort selection.",
+      "task_mode": "arch",
+      "context_mode": "all",
+      "reference_ids": [
+        "environment",
+        "boot-status",
+        "boot-recovery",
+        "boot-rendering",
+        "storage-care",
+        "network-care",
+        "firewall-care",
+        "desktop-care",
+        "arch-maintenance",
+        "coding-workflow"
+      ],
+      "reference_characters": 9768,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "994163b1ebbe018a384611024bf36cc57b17c115e1b0960338561f2c62b84d05"
+    },
+    "check": {
+      "pass": true,
+      "failed_fields": []
+    }
+  },
+  {
+    "task": "package_update",
+    "arm": "ecu",
+    "session_id": "a6a15a0d259e4241a191d7721ea86bdc",
+    "run_id": "7ff7cdec6aa246d690c0b9e3c936d4f2",
+    "content": "```json\n{\n  \"partial_upgrade_supported\": false,\n  \"full_upgrade_command\": \"pacman -Syu\",\n  \"update_checker\": \"checkupdates\",\n  \"auto_upgrade_during_unrelated_debug\": false,\n  \"source_id\": \"arch-maintenance\"\n}\n```\n\n`pacman -Sy` followed by a selective install is a partial upgrade and is unsupported on a rolling-release system; `checkupdates` inspects pending updates without altering the live package database ([arch-maintenance]).",
+    "usage": {
+      "prompt_tokens": 905,
+      "completion_tokens": 152,
+      "total_tokens": 1057,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 137
+    },
+    "seconds": 2.086,
+    "finish_reason": "stop",
+    "decision": {
+      "version": "ecu-v2",
+      "effort": "low",
+      "max_tokens": 2048,
+      "reason": "Conservative low reasoning for coding, OS tasks, and unknown requests.",
+      "task_mode": "arch",
+      "context_mode": "auto",
+      "reference_ids": [
+        "arch-maintenance",
+        "environment",
+        "network-care"
+      ],
+      "reference_characters": 2700,
+      "all_reference_characters": 9768,
+      "instruction_sha256": "6fd097fab46efa4e049e9dbc3bc51aa21b04e6f2fc10b494613b82f32025719b",
+      "references_sha256": "1075c6ce618cf91c2f9db47d937f3ebf3955da53737e1cbacada8827c248a9da"
+    },
+    "check": {
+      "pass": false,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  }
+]

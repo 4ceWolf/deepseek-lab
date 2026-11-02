@@ -1,0 +1,12 @@
+{
+  "session_id": "e0af836a841c42a2968058e46c99cdc3",
+  "prompt": "Stage 7/8: A stakeholder adds optimistic preconditions: support expect events {op:\"expect\",key,value}. value is an integer or null. Null means the key must be absent; stored values remain integers only. A mismatch raises ValueError; a match changes nothing. This also works inside batches and replay. Preserve previous functions and requirements.\nPrevious external verification summary: {\"apply_events\": {\"pass\": true, \"cases\": 44, \"status\": \"passed_supplied_tests\"}, \"replay\": {\"pass\": true, \"cases\": 44, \"status\": \"passed_supplied_tests\"}, \"diff_events\": {\"pass\": true, \"cases\": 4, \"status\": \"passed_supplied_tests\"}}",
+  "evaluation_profile": "raw_history",
+  "effort": "auto",
+  "model": "deepseek-flash",
+  "task_mode": "coding",
+  "context_mode": "none",
+  "output_check": "python",
+  "max_tokens": 4096,
+  "demo": false
+}

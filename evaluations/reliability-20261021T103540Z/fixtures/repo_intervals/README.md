@@ -1,0 +1,1 @@
+merge_windows(windows) returns a list of [start,end] pairs for the union of half-open integer windows, sorted by start. Merge overlaps AND touching windows. Ignore zero-length windows. Inputs satisfy start<=end and may be unsorted. Do not mutate inputs.

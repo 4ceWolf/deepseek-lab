@@ -1,0 +1,1 @@
+merge_config(layers) merges dictionaries from earliest to latest, returning a fresh dictionary. Later values override earlier ones. None deletes a key, including if absent. False, 0, empty string and empty list are valid values and must be preserved. Do not mutate inputs. Values are JSON-compatible; a deep copy is not required.

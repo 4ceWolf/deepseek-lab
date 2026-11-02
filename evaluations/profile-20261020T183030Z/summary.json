@@ -1,0 +1,19 @@
+{
+  "baseline": {
+    "passed": 3,
+    "tasks": 4,
+    "input": 2075,
+    "output": 1366,
+    "seconds": 11.374,
+    "total": 3441
+  },
+  "candidate": {
+    "passed": 4,
+    "tasks": 4,
+    "input": 1903,
+    "output": 4515,
+    "seconds": 24.908,
+    "total": 6418
+  },
+  "total_reduction_percent": -86.52
+}

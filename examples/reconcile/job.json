@@ -1,0 +1,17 @@
+{
+  "module":"module.py",
+  "function":"reconcile",
+  "contract":"reconcile(current, desired) takes two dictionaries with string keys and integer values. Return a deterministic list of actions: ['delete', key] for current keys absent in desired, then ['set', key, value] for new or changed values. Sort each group by key. Omit unchanged entries and preserve both inputs. Empty inputs give []. Return only Python source, no imports.",
+  "max_attempts":2,
+  "requirements":[
+    {"id":"deletions","description":"Delete missing keys before setting changed keys","cases":[0,3]},
+    {"id":"minimal_changes","description":"Preserve unchanged entries and empty inputs","cases":[1,2]},
+    {"id":"ordering_and_ownership","description":"Sort actions and preserve original dictionaries","cases":[0,1,3]}
+  ],
+  "cases":[
+    {"args":[{"z":1,"a":2},{"a":3,"b":4}],"expected":[["delete","z"],["set","a",3],["set","b",4]],"immutable":true},
+    {"args":[{"a":0},{"a":0}],"expected":[],"immutable":true},
+    {"args":[{},{}],"expected":[]},
+    {"args":[{"z":1,"b":2},{"q":0,"a":-1}],"expected":[["delete","b"],["delete","z"],["set","a",-1],["set","q",0]],"immutable":true}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "session_id": "e0af836a841c42a2968058e46c99cdc3",
+  "prompt": "Stage 4/8: Add batch events containing an events list. Support arbitrary nested batches using the same rules. Any invalid nested event raises ValueError; initial and event inputs must remain untouched even on failure.\nPrevious external verification summary: {\"apply_events\": {\"pass\": true, \"cases\": 42, \"status\": \"passed_supplied_tests\"}}",
+  "evaluation_profile": "raw_history",
+  "effort": "auto",
+  "model": "deepseek-flash",
+  "task_mode": "coding",
+  "context_mode": "none",
+  "output_check": "python",
+  "max_tokens": 4096,
+  "demo": false
+}

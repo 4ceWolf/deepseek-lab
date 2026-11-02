@@ -1,0 +1,6 @@
+{
+  "prompt": "Review and correct only your answers 1 and 3, at most 170 words total. For 1, the study did not specify that the same researchers delivered and scored it: separate possible confounds from known facts. A lack of observed benefit alone is not falsification; specify statistical precision and successful manipulation. Explain which people can be blinded when belief is manipulated. For 3, reflect each point of your proposed set across the vertical line Re(z)=1/2. Is your set invariant? Give a correct counterexample and explicitly acknowledge any mistake. Do not claim that these corrections update model weights.",
+  "effort": "low",
+  "max_tokens": 2048,
+  "session_id": "e166f7806a4f4dde846ba23548a18330"
+}

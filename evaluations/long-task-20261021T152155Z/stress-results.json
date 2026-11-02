@@ -1,0 +1,251 @@
+{
+  "apply_events": {
+    "pass": true,
+    "cases": 60,
+    "batches": [
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      }
+    ]
+  },
+  "replay": {
+    "pass": true,
+    "cases": 60,
+    "batches": [
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      }
+    ]
+  },
+  "audit": {
+    "pass": true,
+    "cases": 60,
+    "batches": [
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      }
+    ]
+  },
+  "diff_events": {
+    "pass": true,
+    "cases": 60,
+    "batches": [
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      },
+      {
+        "pass": true,
+        "status": "passed_supplied_tests",
+        "cases": 10,
+        "failures": [],
+        "failure_count": 0,
+        "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+        "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+      }
+    ]
+  },
+  "ownership_probe": {
+    "pass": true,
+    "status": "passed_supplied_tests",
+    "cases": 2,
+    "failures": [],
+    "failure_count": 0,
+    "source_sha256": "eb8561915a6e77afb2007ab16da3ec30dafc3e12cc03449a580551d0af469b75",
+    "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+  }
+}

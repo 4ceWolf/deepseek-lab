@@ -1,0 +1,322 @@
+{
+  "session_id": "e0af836a841c42a2968058e46c99cdc3",
+  "stage": 8,
+  "repairs_used": 0,
+  "requests": 8,
+  "rows": [
+    {
+      "stage": 1,
+      "request": 1,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 38,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "7f8e282bcc998ede9dd53165a088b7fe247bc91a978cd11616ef7fd86553deeb",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 211,
+        "completion_tokens": 530,
+        "total_tokens": 741,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 461
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 211
+      },
+      "seconds": 3.618
+    },
+    {
+      "stage": 2,
+      "request": 2,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 38,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "912967532dd1b18f078466ee32914d23c60ff9a02c87e6cd1245c6294321aba8",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 362,
+        "completion_tokens": 429,
+        "total_tokens": 791,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 296
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 234
+      },
+      "seconds": 2.552
+    },
+    {
+      "stage": 3,
+      "request": 3,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 42,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "94a06618ee925610c7a5e609fd302e8b483c9f83fe695a0364178202e6d3da75",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 576,
+        "completion_tokens": 1023,
+        "total_tokens": 1599,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 809
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 320
+      },
+      "seconds": 4.737
+    },
+    {
+      "stage": 4,
+      "request": 4,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 44,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "debba4d4aea53ab59a8b57303b8697f111ee7f16414da39e91a1ebe19368f703",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 1312,
+        "total_tokens": 2179,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1074
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 355
+      },
+      "seconds": 7.09
+    },
+    {
+      "stage": 5,
+      "request": 5,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 44,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "5576f87754b6ba5f8b8b34ef90490b86b26fab6f2f65b3f0d468714ae5a5983e",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "replay": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 44,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "5576f87754b6ba5f8b8b34ef90490b86b26fab6f2f65b3f0d468714ae5a5983e",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 1190,
+        "completion_tokens": 1188,
+        "total_tokens": 2378,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 889
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 422
+      },
+      "seconds": 5.626
+    },
+    {
+      "stage": 6,
+      "request": 6,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 44,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "60f003a997b0405d22f2ae372d1dfef4f2c63c0a5999785189dd130b072b17f5",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "replay": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 44,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "60f003a997b0405d22f2ae372d1dfef4f2c63c0a5999785189dd130b072b17f5",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "diff_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 4,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "60f003a997b0405d22f2ae372d1dfef4f2c63c0a5999785189dd130b072b17f5",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 1631,
+        "completion_tokens": 860,
+        "total_tokens": 2491,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 438
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 479
+      },
+      "seconds": 4.531
+    },
+    {
+      "stage": 7,
+      "request": 7,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 48,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "29a7930c329a94164a118335dbb3090d99ab209c3efb0c929817cd9516845a58",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "replay": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 48,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "29a7930c329a94164a118335dbb3090d99ab209c3efb0c929817cd9516845a58",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "diff_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 4,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "29a7930c329a94164a118335dbb3090d99ab209c3efb0c929817cd9516845a58",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 2213,
+        "completion_tokens": 968,
+        "total_tokens": 3181,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 481
+        },
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 677
+      },
+      "seconds": 4.733
+    },
+    {
+      "stage": 8,
+      "request": 8,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 48,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "82c0a1efc709b09632a73bf5f884798ec6e04ebf2590188f80c639ca82ff4c23",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "replay": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 48,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "82c0a1efc709b09632a73bf5f884798ec6e04ebf2590188f80c639ca82ff4c23",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "diff_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 4,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "82c0a1efc709b09632a73bf5f884798ec6e04ebf2590188f80c639ca82ff4c23",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "audit": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 48,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "82c0a1efc709b09632a73bf5f884798ec6e04ebf2590188f80c639ca82ff4c23",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 2863,
+        "completion_tokens": 3173,
+        "total_tokens": 6036,
+        "prompt_tokens_details": {
+          "cached_tokens": 2176
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2611
+        },
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 687
+      },
+      "seconds": 13.412
+    }
+  ],
+  "status": "finished",
+  "total_tokens": 19396
+}

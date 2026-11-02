@@ -1,0 +1,1 @@
+plan_jobs(jobs, now, limit) returns IDs of queued jobs due at or before now, ordered by (due, id), up to limit. IDs are unique strings; due/now are integers. Ignore other states. limit<=0 returns []. Never mutate input.

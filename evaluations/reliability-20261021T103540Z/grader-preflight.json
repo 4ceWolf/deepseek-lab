@@ -1,0 +1,2099 @@
+{
+  "repo_jobs": {
+    "reference": {
+      "pass": true,
+      "cases": 82,
+      "failures": []
+    },
+    "seeded_bug": {
+      "pass": false,
+      "cases": 82,
+      "failures": [
+        {
+          "case": 2,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 4,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 5,
+          "reason": "Wrong result",
+          "actual": [
+            "4",
+            "5"
+          ]
+        },
+        {
+          "case": 5,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 6,
+          "reason": "Wrong result",
+          "actual": []
+        },
+        {
+          "case": 6,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 8,
+          "reason": "Wrong result",
+          "actual": [
+            "5",
+            "3",
+            "6",
+            "4",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "case": 8,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 9,
+          "reason": "Wrong result",
+          "actual": [
+            "6",
+            "2",
+            "4",
+            "0"
+          ]
+        },
+        {
+          "case": 9,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 10,
+          "reason": "Wrong result",
+          "actual": [
+            "0",
+            "2"
+          ]
+        },
+        {
+          "case": 10,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 11,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 15,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 17,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 19,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 20,
+          "reason": "Wrong result",
+          "actual": [
+            "4",
+            "1"
+          ]
+        },
+        {
+          "case": 20,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 21,
+          "reason": "Wrong result",
+          "actual": [
+            "1",
+            "0"
+          ]
+        },
+        {
+          "case": 21,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 23,
+          "reason": "Wrong result",
+          "actual": [
+            "0",
+            "3",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "case": 23,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 24,
+          "reason": "Wrong result",
+          "actual": [
+            "1",
+            "6"
+          ]
+        },
+        {
+          "case": 24,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 26,
+          "reason": "Wrong result",
+          "actual": [
+            "0",
+            "3",
+            "5"
+          ]
+        },
+        {
+          "case": 26,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 27,
+          "reason": "Wrong result",
+          "actual": [
+            "1",
+            "3",
+            "2",
+            "0"
+          ]
+        },
+        {
+          "case": 27,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 29,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 30,
+          "reason": "Wrong result",
+          "actual": [
+            "6"
+          ]
+        },
+        {
+          "case": 30,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 31,
+          "reason": "Wrong result",
+          "actual": [
+            "2"
+          ]
+        },
+        {
+          "case": 31,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 32,
+          "reason": "Wrong result",
+          "actual": [
+            "1",
+            "2"
+          ]
+        },
+        {
+          "case": 33,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 34,
+          "reason": "Wrong result",
+          "actual": [
+            "0"
+          ]
+        },
+        {
+          "case": 34,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 35,
+          "reason": "Wrong result",
+          "actual": []
+        },
+        {
+          "case": 35,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 37,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 41,
+          "reason": "Wrong result",
+          "actual": [
+            "3"
+          ]
+        },
+        {
+          "case": 41,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 42,
+          "reason": "Wrong result",
+          "actual": [
+            "7",
+            "4",
+            "2"
+          ]
+        },
+        {
+          "case": 42,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 43,
+          "reason": "Wrong result",
+          "actual": [
+            "2",
+            "3",
+            "4",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "case": 43,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 44,
+          "reason": "Wrong result",
+          "actual": [
+            "2"
+          ]
+        },
+        {
+          "case": 44,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 45,
+          "reason": "Wrong result",
+          "actual": [
+            "1",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "case": 45,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 46,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 47,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 48,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 49,
+          "reason": "Wrong result",
+          "actual": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "case": 50,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 51,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 52,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 54,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 56,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 57,
+          "reason": "Wrong result",
+          "actual": [
+            "1",
+            "0",
+            "4",
+            "2",
+            "6"
+          ]
+        },
+        {
+          "case": 57,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 59,
+          "reason": "Wrong result",
+          "actual": [
+            "0",
+            "2"
+          ]
+        },
+        {
+          "case": 59,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 60,
+          "reason": "Wrong result",
+          "actual": [
+            "7",
+            "0",
+            "3",
+            "5",
+            "4",
+            "6"
+          ]
+        },
+        {
+          "case": 60,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 61,
+          "reason": "Wrong result",
+          "actual": [
+            "4",
+            "2",
+            "1"
+          ]
+        },
+        {
+          "case": 61,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 62,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 63,
+          "reason": "Wrong result",
+          "actual": [
+            "1"
+          ]
+        },
+        {
+          "case": 63,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 64,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 65,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 69,
+          "reason": "Wrong result",
+          "actual": [
+            "0",
+            "3",
+            "1",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "case": 69,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 70,
+          "reason": "Wrong result",
+          "actual": [
+            "6",
+            "2",
+            "0",
+            "3"
+          ]
+        },
+        {
+          "case": 70,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 71,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 72,
+          "reason": "Wrong result",
+          "actual": [
+            "1"
+          ]
+        },
+        {
+          "case": 72,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 74,
+          "reason": "Wrong result",
+          "actual": [
+            "4"
+          ]
+        },
+        {
+          "case": 74,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 75,
+          "reason": "Wrong result",
+          "actual": [
+            "2"
+          ]
+        },
+        {
+          "case": 75,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 77,
+          "reason": "Wrong result",
+          "actual": [
+            "0"
+          ]
+        },
+        {
+          "case": 77,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 79,
+          "reason": "Wrong result",
+          "actual": [
+            "2",
+            "1",
+            "5"
+          ]
+        },
+        {
+          "case": 79,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 80,
+          "reason": "Wrong result",
+          "actual": [
+            "0"
+          ]
+        },
+        {
+          "case": 81,
+          "reason": "Wrong result",
+          "actual": [
+            "3"
+          ]
+        },
+        {
+          "case": 81,
+          "reason": "Input mutated"
+        }
+      ]
+    }
+  },
+  "repo_intervals": {
+    "reference": {
+      "pass": true,
+      "cases": 82,
+      "failures": []
+    },
+    "seeded_bug": {
+      "pass": false,
+      "cases": 82,
+      "failures": [
+        {
+          "case": 2,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              2
+            ],
+            [
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 2,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 3,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 3,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 4,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -4
+            ],
+            [
+              5,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 4,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 5,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -4
+            ],
+            [
+              -4,
+              3
+            ]
+          ]
+        },
+        {
+          "case": 5,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 6,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -2,
+              3
+            ]
+          ]
+        },
+        {
+          "case": 6,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 7,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -4
+            ],
+            [
+              -3,
+              -2
+            ],
+            [
+              -2,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "case": 7,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 10,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -1,
+              4
+            ]
+          ]
+        },
+        {
+          "case": 10,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 11,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 11,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 12,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              3
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 12,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 13,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -3,
+              2
+            ],
+            [
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 13,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 14,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 15,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -4,
+              -1
+            ],
+            [
+              -1,
+              1
+            ]
+          ]
+        },
+        {
+          "case": 15,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 16,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              2
+            ],
+            [
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 16,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 17,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 17,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 18,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 19,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              4
+            ],
+            [
+              6,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 19,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 23,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 23,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 25,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              1
+            ]
+          ]
+        },
+        {
+          "case": 25,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 26,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -3
+            ],
+            [
+              -2,
+              4
+            ]
+          ]
+        },
+        {
+          "case": 26,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 27,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -3
+            ],
+            [
+              -3,
+              4
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 27,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 29,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -1
+            ],
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 29,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 30,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 30,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 34,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -4,
+              -1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 34,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 36,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -4,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 36,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 37,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -5
+            ],
+            [
+              -2,
+              -2
+            ],
+            [
+              -2,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ]
+        },
+        {
+          "case": 37,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 39,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              0
+            ]
+          ]
+        },
+        {
+          "case": 39,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 40,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -2,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 40,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 41,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -1
+            ],
+            [
+              -1,
+              1
+            ]
+          ]
+        },
+        {
+          "case": 41,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 42,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 43,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              4
+            ]
+          ]
+        },
+        {
+          "case": 43,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 45,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 45,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 49,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              3
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 49,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 50,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -4,
+              3
+            ]
+          ]
+        },
+        {
+          "case": 50,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 51,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              0
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "case": 51,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 52,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -4,
+              -4
+            ],
+            [
+              -4,
+              -3
+            ],
+            [
+              -2,
+              2
+            ]
+          ]
+        },
+        {
+          "case": 52,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 54,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -3,
+              3
+            ]
+          ]
+        },
+        {
+          "case": 56,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -4,
+              -2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 56,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 57,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              4
+            ]
+          ]
+        },
+        {
+          "case": 57,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 58,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -1
+            ],
+            [
+              -1,
+              4
+            ]
+          ]
+        },
+        {
+          "case": 58,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 60,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 61,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -4,
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 61,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 63,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 63,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 64,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -4,
+              -1
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "case": 64,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 65,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -3,
+              4
+            ]
+          ]
+        },
+        {
+          "case": 67,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -5
+            ],
+            [
+              -5,
+              1
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 67,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 68,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 69,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -4,
+              -3
+            ],
+            [
+              -3,
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 69,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 70,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -3,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 70,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 71,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -2,
+              3
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "case": 71,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 72,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              2
+            ]
+          ]
+        },
+        {
+          "case": 72,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 75,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 76,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -4
+            ],
+            [
+              -4,
+              -1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 76,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 77,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -3,
+              2
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "case": 77,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 78,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -1,
+              2
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 78,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 79,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -4,
+              3
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        },
+        {
+          "case": 79,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 81,
+          "reason": "Wrong result",
+          "actual": [
+            [
+              -5,
+              -1
+            ],
+            [
+              -1,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "case": 81,
+          "reason": "Input mutated"
+        }
+      ]
+    }
+  },
+  "repo_config": {
+    "reference": {
+      "pass": true,
+      "cases": 82,
+      "failures": []
+    },
+    "seeded_bug": {
+      "pass": false,
+      "cases": 82,
+      "failures": [
+        {
+          "case": 0,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 2,
+          "reason": "Wrong result",
+          "actual": {
+            "a": 1,
+            "c": 1,
+            "d": 1
+          }
+        },
+        {
+          "case": 2,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 3,
+          "reason": "Wrong result",
+          "actual": {
+            "c": "yes",
+            "d": 1,
+            "a": 1
+          }
+        },
+        {
+          "case": 3,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 4,
+          "reason": "Wrong result",
+          "actual": {
+            "b": [],
+            "d": "",
+            "a": "yes",
+            "c": false
+          }
+        },
+        {
+          "case": 6,
+          "reason": "Wrong result",
+          "actual": {
+            "b": 1,
+            "c": [],
+            "d": 1,
+            "a": 1
+          }
+        },
+        {
+          "case": 6,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 7,
+          "reason": "Wrong result",
+          "actual": {
+            "c": "yes",
+            "b": "yes",
+            "d": "yes"
+          }
+        },
+        {
+          "case": 7,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 8,
+          "reason": "Wrong result",
+          "actual": {
+            "a": "yes",
+            "c": "yes",
+            "d": "",
+            "b": "yes"
+          }
+        },
+        {
+          "case": 8,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 10,
+          "reason": "Wrong result",
+          "actual": {
+            "b": 1,
+            "d": false,
+            "a": 1,
+            "c": 1
+          }
+        },
+        {
+          "case": 10,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 11,
+          "reason": "Wrong result",
+          "actual": {
+            "c": 1,
+            "a": "",
+            "d": null
+          }
+        },
+        {
+          "case": 12,
+          "reason": "Wrong result",
+          "actual": {
+            "a": "yes",
+            "d": null,
+            "b": 1,
+            "c": 1
+          }
+        },
+        {
+          "case": 12,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 13,
+          "reason": "Wrong result",
+          "actual": {
+            "b": false,
+            "c": "yes",
+            "a": 1,
+            "d": []
+          }
+        },
+        {
+          "case": 13,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 15,
+          "reason": "Wrong result",
+          "actual": {
+            "b": 1,
+            "d": null,
+            "a": "yes",
+            "c": "yes"
+          }
+        },
+        {
+          "case": 15,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 18,
+          "reason": "Wrong result",
+          "actual": {
+            "d": [],
+            "b": 1,
+            "a": 1
+          }
+        },
+        {
+          "case": 18,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 19,
+          "reason": "Wrong result",
+          "actual": {
+            "b": null,
+            "d": "yes",
+            "a": "yes"
+          }
+        },
+        {
+          "case": 19,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 20,
+          "reason": "Wrong result",
+          "actual": {
+            "c": "",
+            "a": 1,
+            "b": "",
+            "d": null
+          }
+        },
+        {
+          "case": 20,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 21,
+          "reason": "Wrong result",
+          "actual": {
+            "b": "yes",
+            "d": "yes",
+            "c": "yes"
+          }
+        },
+        {
+          "case": 21,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 22,
+          "reason": "Wrong result",
+          "actual": {
+            "a": "yes",
+            "b": 1,
+            "d": 1
+          }
+        },
+        {
+          "case": 22,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 24,
+          "reason": "Wrong result",
+          "actual": {
+            "a": "yes",
+            "b": false
+          }
+        },
+        {
+          "case": 24,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 25,
+          "reason": "Wrong result",
+          "actual": {
+            "c": "yes"
+          }
+        },
+        {
+          "case": 25,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 27,
+          "reason": "Wrong result",
+          "actual": {
+            "a": 1,
+            "d": false
+          }
+        },
+        {
+          "case": 28,
+          "reason": "Wrong result",
+          "actual": {}
+        },
+        {
+          "case": 29,
+          "reason": "Wrong result",
+          "actual": {
+            "b": false,
+            "c": "",
+            "a": null,
+            "d": ""
+          }
+        },
+        {
+          "case": 30,
+          "reason": "Wrong result",
+          "actual": {
+            "b": 1,
+            "c": "yes",
+            "d": 1
+          }
+        },
+        {
+          "case": 30,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 33,
+          "reason": "Wrong result",
+          "actual": {
+            "c": ""
+          }
+        },
+        {
+          "case": 34,
+          "reason": "Wrong result",
+          "actual": {
+            "a": null,
+            "b": "",
+            "d": []
+          }
+        },
+        {
+          "case": 35,
+          "reason": "Wrong result",
+          "actual": {
+            "c": "yes",
+            "d": 1,
+            "a": "yes"
+          }
+        },
+        {
+          "case": 35,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 36,
+          "reason": "Wrong result",
+          "actual": {
+            "c": "yes",
+            "a": "yes",
+            "d": 1,
+            "b": ""
+          }
+        },
+        {
+          "case": 36,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 37,
+          "reason": "Wrong result",
+          "actual": {
+            "d": "yes",
+            "b": "yes"
+          }
+        },
+        {
+          "case": 37,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 38,
+          "reason": "Wrong result",
+          "actual": {}
+        },
+        {
+          "case": 39,
+          "reason": "Wrong result",
+          "actual": {
+            "d": false,
+            "a": "yes",
+            "b": [],
+            "c": 1
+          }
+        },
+        {
+          "case": 39,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 41,
+          "reason": "Wrong result",
+          "actual": {
+            "b": "yes",
+            "c": "yes"
+          }
+        },
+        {
+          "case": 41,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 42,
+          "reason": "Wrong result",
+          "actual": {
+            "c": 1,
+            "b": "yes",
+            "a": 1,
+            "d": 1
+          }
+        },
+        {
+          "case": 42,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 45,
+          "reason": "Wrong result",
+          "actual": {
+            "c": 1,
+            "b": 0
+          }
+        },
+        {
+          "case": 46,
+          "reason": "Wrong result",
+          "actual": {
+            "b": null,
+            "c": "yes",
+            "d": "yes"
+          }
+        },
+        {
+          "case": 46,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 48,
+          "reason": "Wrong result",
+          "actual": {
+            "b": false,
+            "d": 1,
+            "a": 1,
+            "c": "yes"
+          }
+        },
+        {
+          "case": 48,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 49,
+          "reason": "Wrong result",
+          "actual": {
+            "d": "yes"
+          }
+        },
+        {
+          "case": 49,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 50,
+          "reason": "Wrong result",
+          "actual": {
+            "b": "yes"
+          }
+        },
+        {
+          "case": 51,
+          "reason": "Wrong result",
+          "actual": {
+            "a": 0,
+            "b": "yes",
+            "d": "yes"
+          }
+        },
+        {
+          "case": 51,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 53,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 56,
+          "reason": "Wrong result",
+          "actual": {
+            "a": "yes",
+            "b": "yes",
+            "d": 1,
+            "c": 1
+          }
+        },
+        {
+          "case": 56,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 59,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 60,
+          "reason": "Wrong result",
+          "actual": {
+            "d": 1
+          }
+        },
+        {
+          "case": 61,
+          "reason": "Wrong result",
+          "actual": {
+            "d": "yes"
+          }
+        },
+        {
+          "case": 61,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 63,
+          "reason": "Wrong result",
+          "actual": {
+            "c": [],
+            "a": 1,
+            "b": "yes"
+          }
+        },
+        {
+          "case": 63,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 65,
+          "reason": "Wrong result",
+          "actual": {
+            "a": 1,
+            "c": "",
+            "d": 1
+          }
+        },
+        {
+          "case": 65,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 66,
+          "reason": "Wrong result",
+          "actual": {
+            "b": "yes",
+            "c": "yes",
+            "a": "yes"
+          }
+        },
+        {
+          "case": 66,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 67,
+          "reason": "Wrong result",
+          "actual": {
+            "a": 1,
+            "c": "",
+            "d": "",
+            "b": null
+          }
+        },
+        {
+          "case": 69,
+          "reason": "Wrong result",
+          "actual": {
+            "c": null,
+            "b": 1
+          }
+        },
+        {
+          "case": 71,
+          "reason": "Wrong result",
+          "actual": {
+            "b": 1,
+            "c": 0,
+            "d": "yes"
+          }
+        },
+        {
+          "case": 71,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 73,
+          "reason": "Wrong result",
+          "actual": {
+            "d": ""
+          }
+        },
+        {
+          "case": 74,
+          "reason": "Wrong result",
+          "actual": {
+            "b": null,
+            "c": 1,
+            "a": 1,
+            "d": "yes"
+          }
+        },
+        {
+          "case": 74,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 76,
+          "reason": "Wrong result",
+          "actual": {
+            "b": "yes",
+            "a": 1,
+            "d": ""
+          }
+        },
+        {
+          "case": 79,
+          "reason": "Wrong result",
+          "actual": {
+            "d": false,
+            "c": "yes",
+            "a": "yes"
+          }
+        },
+        {
+          "case": 79,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 80,
+          "reason": "Wrong result",
+          "actual": {
+            "c": 1
+          }
+        },
+        {
+          "case": 80,
+          "reason": "Input mutated"
+        },
+        {
+          "case": 81,
+          "reason": "Wrong result",
+          "actual": {
+            "a": 1,
+            "c": 1,
+            "d": "yes"
+          }
+        },
+        {
+          "case": 81,
+          "reason": "Input mutated"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "assistant": {
+    "pass": true,
+    "cases": 1560,
+    "failures": []
+  },
+  "deepseek_thinking_off": {
+    "pass": true,
+    "cases": 1560,
+    "failures": []
+  },
+  "cases_per_implementation": 1560
+}

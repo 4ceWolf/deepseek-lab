@@ -1,0 +1,12 @@
+{
+  "session_id": "e0af836a841c42a2968058e46c99cdc3",
+  "prompt": "Stage 2/8: Extend apply_events with delete (key; missing is a no-op) and add (key,value; missing starts at zero). Zero and negative values are valid. Preserve earlier behavior.\nPrevious external verification summary: {\"apply_events\": {\"pass\": true, \"cases\": 38, \"status\": \"passed_supplied_tests\"}}",
+  "evaluation_profile": "raw_history",
+  "effort": "auto",
+  "model": "deepseek-flash",
+  "task_mode": "coding",
+  "context_mode": "none",
+  "output_check": "python",
+  "max_tokens": 4096,
+  "demo": false
+}

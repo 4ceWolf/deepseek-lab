@@ -1,0 +1,322 @@
+{
+  "session_id": "464275fc18254c4198e1e071b69217f8",
+  "stage": 8,
+  "repairs_used": 0,
+  "requests": 8,
+  "rows": [
+    {
+      "stage": 1,
+      "request": 1,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 38,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "4546f78f8a86de9f7986b355ad3b69c964f5ed2229eb7c5767cc3ada6a9b3d33",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 593,
+        "completion_tokens": 248,
+        "total_tokens": 841,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 176
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 209
+      },
+      "seconds": 4.815
+    },
+    {
+      "stage": 2,
+      "request": 2,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 38,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "d028367879c70e951a1e5e5493563a0ae89096ebb3eeb30f3c824517180d8489",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 747,
+        "completion_tokens": 266,
+        "total_tokens": 1013,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 147
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 235
+      },
+      "seconds": 2.12
+    },
+    {
+      "stage": 3,
+      "request": 3,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 42,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "9f14bd96e4af598c73414b239a89e7d1be6bb46af165a70bbd86a0dc21212d9f",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 947,
+        "completion_tokens": 280,
+        "total_tokens": 1227,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 75
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 307
+      },
+      "seconds": 2.117
+    },
+    {
+      "stage": 4,
+      "request": 4,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 44,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "209bb58022eed67e8319bd14d9f9f42ccf76acbcd492035c2894b158d9dbd6a6",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 1229,
+        "completion_tokens": 531,
+        "total_tokens": 1760,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 300
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 333
+      },
+      "seconds": 3.333
+    },
+    {
+      "stage": 5,
+      "request": 5,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 44,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "63aae2dadc54251da6b441e1603621c77df8037425e64234e497882d6bb898d0",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "replay": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 44,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "63aae2dadc54251da6b441e1603621c77df8037425e64234e497882d6bb898d0",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 1545,
+        "completion_tokens": 605,
+        "total_tokens": 2150,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 302
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 393
+      },
+      "seconds": 2.99
+    },
+    {
+      "stage": 6,
+      "request": 6,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 44,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "0531e26d1dd93ae09dd072c66df8e22b6390b241cc1f74c4dcd1550e5454f5e6",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "replay": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 44,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "0531e26d1dd93ae09dd072c66df8e22b6390b241cc1f74c4dcd1550e5454f5e6",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "diff_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 4,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "0531e26d1dd93ae09dd072c66df8e22b6390b241cc1f74c4dcd1550e5454f5e6",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 1990,
+        "completion_tokens": 450,
+        "total_tokens": 2440,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 35
+        },
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 454
+      },
+      "seconds": 2.277
+    },
+    {
+      "stage": 7,
+      "request": 7,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 48,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "37e90eccc11760cc5e00feed4712efdea0cb5a78797326d180b465331e99d8f7",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "replay": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 48,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "37e90eccc11760cc5e00feed4712efdea0cb5a78797326d180b465331e99d8f7",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "diff_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 4,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "37e90eccc11760cc5e00feed4712efdea0cb5a78797326d180b465331e99d8f7",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 2565,
+        "completion_tokens": 613,
+        "total_tokens": 3178,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 118
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 645
+      },
+      "seconds": 3.039
+    },
+    {
+      "stage": 8,
+      "request": 8,
+      "checks": {
+        "apply_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 48,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "replay": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 48,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "diff_events": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 4,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        },
+        "audit": {
+          "pass": true,
+          "status": "passed_supplied_tests",
+          "cases": 48,
+          "failures": [],
+          "failure_count": 0,
+          "source_sha256": "fb3c05f387b78369c5dc68125a4e2f6cc65fd950724c415f933a8b1494138088",
+          "scope": "JSON-compatible pure functions only; passing supplied cases is not proof of general correctness."
+        }
+      },
+      "pass": true,
+      "usage": {
+        "prompt_tokens": 3223,
+        "completion_tokens": 772,
+        "total_tokens": 3995,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 202
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 663
+      },
+      "seconds": 3.652
+    }
+  ],
+  "status": "finished",
+  "total_tokens": 16604
+}

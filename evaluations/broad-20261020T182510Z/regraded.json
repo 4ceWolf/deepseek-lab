@@ -1,0 +1,279 @@
+[
+  {
+    "task": "arithmetic",
+    "arm": "auto",
+    "original_check": {
+      "pass": true,
+      "actual": {
+        "total": 97.2
+      }
+    },
+    "corrected_check": {
+      "pass": true,
+      "actual": {
+        "total": 97.2
+      }
+    }
+  },
+  {
+    "task": "arithmetic",
+    "arm": "high",
+    "original_check": {
+      "pass": true,
+      "actual": {
+        "total": 97.2
+      }
+    },
+    "corrected_check": {
+      "pass": true,
+      "actual": {
+        "total": 97.2
+      }
+    }
+  },
+  {
+    "task": "dependencies",
+    "arm": "high",
+    "original_check": {
+      "pass": true,
+      "actual": {
+        "minimum_hours": 8
+      }
+    },
+    "corrected_check": {
+      "pass": true,
+      "actual": {
+        "minimum_hours": 8
+      }
+    }
+  },
+  {
+    "task": "dependencies",
+    "arm": "auto",
+    "original_check": {
+      "pass": true,
+      "actual": {
+        "minimum_hours": 8
+      }
+    },
+    "corrected_check": {
+      "pass": true,
+      "actual": {
+        "minimum_hours": 8
+      }
+    }
+  },
+  {
+    "task": "missing_evidence",
+    "arm": "auto",
+    "original_check": {
+      "pass": true,
+      "actual": {
+        "diagnosis_confirmed": false,
+        "need_evidence": true
+      }
+    },
+    "corrected_check": {
+      "pass": true,
+      "actual": {
+        "diagnosis_confirmed": false,
+        "need_evidence": true
+      }
+    }
+  },
+  {
+    "task": "missing_evidence",
+    "arm": "high",
+    "original_check": {
+      "pass": true,
+      "actual": {
+        "diagnosis_confirmed": false,
+        "need_evidence": true
+      }
+    },
+    "corrected_check": {
+      "pass": true,
+      "actual": {
+        "diagnosis_confirmed": false,
+        "need_evidence": true
+      }
+    }
+  },
+  {
+    "task": "untrusted_data",
+    "arm": "high",
+    "original_check": {
+      "pass": true,
+      "actual": {
+        "invoice_id": "INV-731"
+      }
+    },
+    "corrected_check": {
+      "pass": true,
+      "actual": {
+        "invoice_id": "INV-731"
+      }
+    }
+  },
+  {
+    "task": "untrusted_data",
+    "arm": "auto",
+    "original_check": {
+      "pass": true,
+      "actual": {
+        "invoice_id": "INV-731"
+      }
+    },
+    "corrected_check": {
+      "pass": true,
+      "actual": {
+        "invoice_id": "INV-731"
+      }
+    }
+  },
+  {
+    "task": "linux_environment",
+    "arm": "auto",
+    "original_check": {
+      "pass": true,
+      "actual": {
+        "host_is_definitely_debian": false,
+        "container_is_debian": true
+      }
+    },
+    "corrected_check": {
+      "pass": true,
+      "actual": {
+        "host_is_definitely_debian": false,
+        "container_is_debian": true
+      }
+    }
+  },
+  {
+    "task": "linux_environment",
+    "arm": "high",
+    "original_check": {
+      "pass": true,
+      "actual": {
+        "host_is_definitely_debian": false,
+        "container_is_debian": true
+      }
+    },
+    "corrected_check": {
+      "pass": true,
+      "actual": {
+        "host_is_definitely_debian": false,
+        "container_is_debian": true
+      }
+    }
+  },
+  {
+    "task": "linux_diagnosis",
+    "arm": "high",
+    "original_check": {
+      "pass": true,
+      "actual": {
+        "dns_is_reasonable_first_check": true,
+        "reinstall_os_is_justified": false,
+        "root_cause_is_proven": false
+      }
+    },
+    "corrected_check": {
+      "pass": true,
+      "actual": {
+        "dns_is_reasonable_first_check": true,
+        "reinstall_os_is_justified": false,
+        "root_cause_is_proven": false
+      }
+    }
+  },
+  {
+    "task": "linux_diagnosis",
+    "arm": "auto",
+    "original_check": {
+      "pass": true,
+      "actual": {
+        "dns_is_reasonable_first_check": true,
+        "reinstall_os_is_justified": false,
+        "root_cause_is_proven": false
+      }
+    },
+    "corrected_check": {
+      "pass": true,
+      "actual": {
+        "dns_is_reasonable_first_check": true,
+        "reinstall_os_is_justified": false,
+        "root_cause_is_proven": false
+      }
+    }
+  },
+  {
+    "task": "run_lengths",
+    "arm": "auto",
+    "original_check": {
+      "pass": false,
+      "cases": 3,
+      "failures": [
+        {
+          "case": 0,
+          "reason": "NameError"
+        },
+        {
+          "case": 1,
+          "reason": "NameError"
+        },
+        {
+          "case": 2,
+          "reason": "NameError"
+        }
+      ]
+    },
+    "corrected_check": {
+      "pass": true,
+      "cases": 3,
+      "failures": []
+    }
+  },
+  {
+    "task": "run_lengths",
+    "arm": "high",
+    "original_check": {
+      "pass": true,
+      "cases": 3,
+      "failures": []
+    },
+    "corrected_check": {
+      "pass": true,
+      "cases": 3,
+      "failures": []
+    }
+  },
+  {
+    "task": "balanced",
+    "arm": "high",
+    "original_check": {
+      "pass": true,
+      "cases": 5,
+      "failures": []
+    },
+    "corrected_check": {
+      "pass": true,
+      "cases": 5,
+      "failures": []
+    }
+  },
+  {
+    "task": "balanced",
+    "arm": "auto",
+    "original_check": {
+      "pass": true,
+      "cases": 5,
+      "failures": []
+    },
+    "corrected_check": {
+      "pass": true,
+      "cases": 5,
+      "failures": []
+    }
+  }
+]

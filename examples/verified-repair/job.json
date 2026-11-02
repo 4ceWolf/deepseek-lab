@@ -1,0 +1,12 @@
+{
+  "module": "module.py",
+  "function": "cumulative",
+  "contract": "cumulative(events) receives [name, integer_delta] pairs. Return a dictionary summing deltas for each name. Preserve names with a zero final total. Empty input returns {}. Do not mutate events. No imports or I/O.",
+  "max_attempts": 2,
+  "cases": [
+    {"args": [[["a", 2], ["a", 3], ["b", -1]]], "expected": {"a": 5, "b": -1}, "immutable": true},
+    {"args": [[]], "expected": {}},
+    {"args": [[["a", 1], ["a", -1]]], "expected": {"a": 0}, "immutable": true},
+    {"args": [[["x", -4], ["x", -3]]], "expected": {"x": -7}, "immutable": true}
+  ]
+}

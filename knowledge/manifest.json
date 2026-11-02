@@ -1,0 +1,82 @@
+[
+  {
+    "id": "machine-audit",
+    "source": "/home/user/Projects/machine-care/AUDIT-2026-09-26.md",
+    "snapshot": "knowledge/sources/machine-audit.md",
+    "sha256": "13b15d6838c984b03d2fc5f7c6ea2c4ffb7b1673853198fecbf4fbe24e3d046e",
+    "captured": "2026-10-14",
+    "status": "historical source; not current machine verification"
+  },
+  {
+    "id": "machine-security",
+    "source": "/home/user/Projects/machine-care/SECURITY-FIXES.md",
+    "snapshot": "knowledge/sources/machine-security.md",
+    "sha256": "38a5667c00f3b2ed36c803574739a0e16f6f58f12d9d9f584447dcc28d8df595",
+    "captured": "2026-10-14",
+    "status": "historical source; not current machine verification"
+  },
+  {
+    "id": "machine-network",
+    "source": "/home/user/Projects/machine-care/NETWORK-AND-SSD.md",
+    "snapshot": "knowledge/sources/machine-network.md",
+    "sha256": "45b3d3af8173f5de29d3e086b64f5b75ae2aa2f92afccb1dbfd947f1dc2c6db3",
+    "captured": "2026-10-14",
+    "status": "historical source; not current machine verification"
+  },
+  {
+    "id": "machine-dashboard",
+    "source": "/home/user/Projects/machine-care/dashboard/README.md",
+    "snapshot": "knowledge/sources/machine-dashboard.md",
+    "sha256": "bd4c3de4b11e87ae5acb7f6823ccf9262b25d84c49d4b3a77168ec86c186e22e",
+    "captured": "2026-10-14",
+    "status": "historical source; not current machine verification"
+  },
+  {
+    "id": "desktop-preparation",
+    "source": "/home/user/Projects/machine-care/INIR-PREPARATION.md",
+    "snapshot": "knowledge/sources/desktop-preparation.md",
+    "sha256": "be2f18ae6e7e92cd50c8deda9ecc64ea5844fb5f70f95251d98b797107048484",
+    "captured": "2026-10-14",
+    "status": "historical source; not current machine verification"
+  },
+  {
+    "id": "miku-design",
+    "source": "/home/user/Projects/miku-plymouth/README.md",
+    "snapshot": "knowledge/sources/miku-design.md",
+    "sha256": "8725bfafa2392394660a66de4c07a62972b6bfe1ee8c1cac3413817289426737",
+    "captured": "2026-10-14",
+    "status": "historical source; not current machine verification"
+  },
+  {
+    "id": "miku-kernels",
+    "source": "/home/user/Projects/miku-plymouth/KERNELS.md",
+    "snapshot": "knowledge/sources/miku-kernels.md",
+    "sha256": "de32cadb06a004db1d79185fd5198cb176220a3b6987c199ce1a689c9992b928",
+    "captured": "2026-10-14",
+    "status": "historical source; not current machine verification"
+  },
+  {
+    "id": "miku-recovery",
+    "source": "/home/user/Projects/miku-plymouth/RECOVERY.md",
+    "snapshot": "knowledge/sources/miku-recovery.md",
+    "sha256": "761c7d827448c9502e80cc1cea7546ecc5b22b145761c8a4ad199594d0d302e8",
+    "captured": "2026-10-14",
+    "status": "historical source; not current machine verification"
+  },
+  {
+    "id": "miku-verified",
+    "source": "/home/user/Projects/echo_rust/miku-plymouth/VERIFIED-BOOT.md",
+    "snapshot": "knowledge/sources/miku-verified.md",
+    "sha256": "aedc832a4f19f6d38007bbc4f92ac47c30f98081b0db8f14b3c66c725a86ae17",
+    "captured": "2026-10-14",
+    "status": "historical source; not current machine verification"
+  },
+  {
+    "id": "miku-password",
+    "source": "/home/user/Projects/echo_rust/miku-plymouth/PASSWORD-APPEARANCE.md",
+    "snapshot": "knowledge/sources/miku-password.md",
+    "sha256": "1f152bda003b91f09fd577ac8890e54fa38da9fdaf3b489b38d4c7cf25080239",
+    "captured": "2026-10-14",
+    "status": "historical source; not current machine verification"
+  }
+]
