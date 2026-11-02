@@ -4,7 +4,7 @@ September 26, 2026. Your `throughput-performance` power profile and all snapshot
 
 ## Applied without administrator access
 
-- Removed the inactive duplicate **Archer** profile (`ac4ba292-a894-4342-8a49-a6071a729046`). The working profile (`26f43e8c-7ebc-4ea4-812c-699bb60724b4`) remains active, with its password preserved. The relevant network identity settings matched before removal. No new profiles were created.
+- Removed the inactive duplicate **home-wifi** profile (`ac4ba292-a894-4342-8a49-a6071a729046`). The working profile (`26f43e8c-7ebc-4ea4-812c-699bb60724b4`) remains active, with its password preserved. The relevant network identity settings matched before removal. No new profiles were created.
 - Set **AdGuard's standard ad/tracker-blocking DNS**, not the family-protection variant, on all seven existing Wi-Fi/Ethernet profiles.
 - Enabled authenticated DNS-over-TLS for those profiles, using `94.140.14.14#dns.adguard-dns.com` and `94.140.15.15#dns.adguard-dns.com`.
 - Disabled automatically supplied DNS for both IPv4 and IPv6 on those profiles. IP addressing, routes, and IPv6 networking itself are unchanged.
@@ -21,7 +21,7 @@ Provider addresses: [AdGuard public DNS documentation](https://adguard-dns.io/en
 
 ## What the Wi-Fi checks showed
 
-- Intel Wireless-AC 9560 using `iwlwifi`; connected to Archer at 5 GHz, channel 149, 80 MHz width.
+- Intel Wireless-AC 9560 using `iwlwifi`; connected to home-wifi at 5 GHz, channel 149, 80 MHz width.
 - Signal was approximately **−72 to −74 dBm** during inspection. This leaves less signal margin than a strong nearby connection, but did not demonstrate a broken driver.
 - A short 12-packet router test had **0% loss**, approximately **2.25 ms average**, and **4.73 ms maximum** latency.
 - A separate 12-packet Internet test had **0% loss**, approximately **40 ms average**, and a **133 ms spike**. These short tests do not isolate ISP congestion, game-server routing, or intermittent faults.
